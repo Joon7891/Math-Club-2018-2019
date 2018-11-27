@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={7in, 10in}]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\title{Vieta's Formulas Lesson\vspace{-3mm}}
+\author{2018-2019 SLSS Math Club\vspace{-5mm}}
+\date{October 24, 2018\vspace{-5mm}}
+
+\begin{document}
+\maketitle
+\section{Introduction}
+Vieta's formulas are a set of formulas relating the coefficients of a polynomial to the sums and products of its roots. It is useful in determining the sums and products of the roots of a polynomial when the roots can not easily be solved for.
+
+\section{Formulas}
+\subsection{Second Degree Polynomials}
+For a given second degree polynomial (quadratic) $$P(x)=ax^2 + bx + c$$ with roots $x_1, x_2$, the following equations are satisfied:
+\begin{align*}
+    x_1 + x_2 & = -\frac{b}{a} \\
+    x_1x_2 & = \frac{c}{a}
+\end{align*}
+
+\subsection{Third Degree Polynomials}
+For a given third degree polynomial (cubic) $$P(x) = ax^3 + bx^2 + cx + d$$ with roots $x_1, x_2, x_3$, the following equations are satisfied:
+\begin{align*}
+    x_1 + x_2 + x_3 & = -\frac{b}{a} \\
+    x_1x_2 + x_1x_3 + x_2x_3 & = \frac{c}{a} \\
+    x_1x_2x_3 & = -\frac{d}{a}
+\end{align*}
+
+\subsection{Generalization}
+For a given $n$-th degree polynomial $$P(x)=a_nx^n + a_{n-1}x^{n-1} + \dots a_1x^1 + a_0x^0$$ with roots $x_1, x_2, \dots, x_{n-1}, x_n$, the following equations are satisfied:
+\begin{align*}
+    x_1 + x_2 + \dots + x_{n-1} + x_n & = -\frac{a_{n-1}}{a_n} \\
+    x_1x_2\dots x_{n-1}x_n & = (-1)^n\frac{a_0}{a_n}
+\end{align*}
+
+\newpage
+
+\newcommand{\spacing}{\\ \\ \\ \\ \\ \\ \\ \\ \\ \\}
+\section{Practice}
+\begin{enumerate}
+    \item Determine the sum of all roots of the function $f(x) = 5x^7 + 8x^6 - 2x^5 + x^3 - 2x + 1$ \spacing
+    \item Determine the product of all roots of the function $f(x) = 7x^9 + 6x^5 - 4x^3 + 2x$ \spacing
+    \item If $x_1, x_2$ are the roots of the equation $x^2 + 5x - 3 = 0$, determine the value of $x_1^2 + x_2^2$ \spacing
+    \item If $x_1, x_2, x_3$ are the roots of the equation $3x^3 - 3x^2 + 5x - 7$, determine the value of $x_1^2 + x_2^2 + x_3^2$ \spacing
+\end{enumerate}
+\end{document}

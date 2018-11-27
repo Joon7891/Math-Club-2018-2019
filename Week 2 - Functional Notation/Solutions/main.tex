@@ -1,0 +1,123 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={7in, 10in}]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\title{Week 2 Problem Set Solutions\vspace{-3mm}}
+\author{2018-2019 SLSS Math Club\vspace{-5mm}}
+\date{October 24, 2018 \vspace{-5mm}}
+
+\begin{document}
+\maketitle
+
+\section*{Basic Problems}
+\begin{enumerate}
+    \item \textbf{A function $f$ satisfies: \\ $$f(x) + f(x + 3) = 2x + 5$$ \\ If $f(2) + f(8) = 12$, what is the value of $f(5)$?} \\ \\
+    Set $x = 2$ and $x = 5$ and add the equations to obtain the following:
+    \begin{align*}
+        f(5)+f(8)&=(2)(5)+5 \\
+        + f(2)+f(5)&=(2)(2)+5 \\[-10pt]
+        \cline{1-2}
+        2f(5)+f(2)+f(8)&=15+9 \\
+        2f(5)+12&=24 \\
+        2f(5)&=12 \\
+        f(5)&=6
+    \end{align*}
+    $\therefore f(5) = 6$
+
+    \item \textbf{If $f(x+1)=\frac{2f(x)+1}{3}$ and $f(2) = 2$, find the value of $f(1)$.}
+    If $x = 1$,
+    \begin{align*}
+        f(x+1)&=\frac{2f(x)+1}{3} \\
+        f(1 + 1)&=\frac{2f(1)+1}{3} \\
+        f(1)&=\frac{3f(2)-1}{2} \\
+        f(1)&=\frac{3(2)-1}{2} \\
+        f(1)&=2.5
+    \end{align*}
+    $\therefore f(1) = 2.5$
+    
+\end{enumerate} \newpage
+\section*{Intermediate Problems}
+\begin{enumerate}
+    \item \textbf{The function $f(x)$ has the following property: $$f(x+y)=f(x)+f(y)+2xy$$ for all positive integers $x$ and $y$. If $f(1)=4$, determine $f(8)$.} \\ \\
+    Let $y = x$:
+    \begin{align*}
+        f(x + x) &= f(x) + f(x) + 2xx \\
+        f(2x) &= 2f(x) + 2x^2
+    \end{align*}
+    Solving for $f(8)$:
+    \begin{align*}
+        f(2 \cdot 1) &= 2f(1) + 2(1)^2 \\
+        f(2) &= 2(4) + 2 \\
+        f(2) & = 10 \\ \\
+        f(2 \cdot 2) &= 2f(2) + 2(2)^2 \\
+        f(4) &= 2(10) + 8 \\
+        f(4) & = 28 \\ \\
+        f(2 \cdot 4) &= 2f(4) + 2(4)^2 \\
+        f(8) &= 2(28) + 32 \\
+        f(8) & = 88
+    \end{align*}
+    $\therefore f(8) = 88$
+
+    \item \textbf{Let $f$ be a real valued function such that: $$f(m + n) = f(m)\cdot f(n)$$ If $f(4) = 256$ and $f(k) = 0.0625$, find the value of $k$.}
+    \begin{align*}
+        f(4+0)&=f(4)\cdot f(0) \\
+        f(0)&=1 \\ \\
+        f(1+1)&=f^2(1) \\
+        \therefore f(2) = f^2(1) & \geq 0 \\ \\
+        f(2+2)&=f^2(2)=256 \\
+        f(2)&=16 \\ \\
+        f(2-2)&=f(2)\cdot f(-2)=1 \\
+        f(-2)&=\frac{1}{16}=0.0625 \\
+        k&=-2
+    \end{align*}
+    
+\end{enumerate}
+
+\section*{Advanced Problem}
+\begin{enumerate}
+    \item \textbf{A function is defined for integers $a$ and $b$ as follows: $$f(ab) = f(a)f(b) - f(a + b) + 1989$$ where either $a$ or $b$ is $1$, and $f(1) = 2.$
+    \begin{enumerate}
+        \item Prove that $f(n) = f(n - 1) + 1989$ \\ \\
+        {\normalfont Set $a=1$ and $b=n-1$}
+        \begin{align*}
+            f(n-1)&=f(1)f(n-1)-f(n)+1989 \\
+            f(n-1)&=2f(n-1)-f(n)+1989 \\
+            f(n)&=f(n-1)+1989
+        \end{align*}
+        \item Determine the value of $f(2001)$ \\ \\
+        {\normalfont Since $f(n)-f(n-1)=1989$, then $f(n)$ is an arithmetic sequence with the first term $f(1)=2$ and common difference 1989.}
+        \begin{align*}
+            f(2001)&=2+2000(1989) \\
+            &=3978002
+        \end{align*}
+    \end{enumerate}}
+    
+    \item \textbf{Let $f$ be a real valued function such that: $$f(x) + xf(1 - x) = 1 + x^2$$ for all real $x$. Determine $f(x)$.} \\ \\
+    Set $x = 1-x$
+    \begin{align*}
+        f(1-x)+(1-x)f(x)&=1+(1-x)^2 \\
+        f(1-x)+(1-x)f(x)&=x^2-2x+2 \\
+    \end{align*}
+    To remove $f(1 - x)$ we multiply the second equation by $x$ and subtration from the original equation
+    \begin{align*}
+        f(x)+x(1-x)-xf(1-x)-x(1-x)f(x)&=1+x^2-2x+2x^2-x^3 \\
+        (1-x+x^2)f(x)&=1-2x+3x^2-x^3 \\
+        f(x)=\frac{1-2x+3x^2-x^3}{1-x+x^2}
+    \end{align*}
+    \newpage
+    \item \textbf{If $f(x)=3x^2-2x+5$ and $f(g(x))=12x^4+56x^2+70$, find all possible values for the sum of coefficients of $g(x)$.}
+    
+    The sum of the coefficients of $g(x)$ is obtained by finding $g(1)$
+    \begin{align*}
+        f[g(x)] &= 3[g(x)]^2 - 2[g(x)] + 5 \\
+        f[g(1)] &= 3[g(1)]^2 - 2[g(1)] + 5 \\
+        &= 12 + 56 + 70 \\
+        0 &=3[g(1)]^2 - 2[g(1)] - 133 \\
+        0 &= [3g(1) + 19][g(1) - 7]
+    \end{align*}
+    $\therefore$ the sum of the coefficients of $g(x)$ is $-\frac{19}{3}$ or $7$
+\end{enumerate}
+
+\end{document}

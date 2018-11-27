@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={7in, 10in}]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\title{Analytic Geometry (Part 1) Lesson\vspace{-3mm}}
+\author{2018-2019 SLSS Math Club\vspace{-5mm}}
+\date{October 31, 2018\vspace{-5mm}}
+
+\begin{document}
+\maketitle
+\section{Introduction}
+Analytic geometry, also known as coordinate geometry or Cartesian geometry, is the study of geometry using a coordinate system.
+
+\section{Formulas}
+\subsection{Distance Formula}
+The distance between two points $(x_1, y_1)$ and $(x_2, y_2)$ is given by the following formula:
+\begin{equation*}
+    d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
+\end{equation*}
+
+\subsection{Midpoint Formula}
+The midpoint between two points $(x_1, y_1)$ and $(x_2, y_2)$ is given by the following formula:
+\begin{equation*}
+    M = (\frac{x_1 + x_2}{2}, \frac{y_1 + y_2}{2})
+\end{equation*}
+
+\subsection{Shortest/Perpendicular Distance}
+The shortest distance from a point $(x_1, y_1)$ to a line $Ax + By + C = 0$ is given by:
+\begin{equation*}
+    d = \frac{|Ax_1 + By_1 + C|}{\sqrt{A^2 + B^2}}
+\end{equation*}
+
+\section{Triangle Properties}
+\subsection{Median}
+A line segment joining a vertex to the midpoint of the opposing side, bisecting it. \\ \\
+An linear equation of a median can be found by determining the midpoint of the opposite side and using the midpoint and the vertex as points to determine its $y = mx + b$ equation.
+
+\subsection{Altitude}
+A line segment that goes through a vertex and is perpendicular to the opposide side. \\ \\
+A linear equation of an altitude can be found by determining the slope of the opposite side and using its perpendicular slope along with the vertex to determine its $y = mx + b$ equation.
+
+\subsection{Right Bisector}
+A line that goes through a midpoint at a perpendicular angle. \\ \\
+A linear equation of a right bisector can be found by determining the slope and the midpoint of a given side and using its perpendicular slope and its midpoint to determine its $y = mx + b$ equation.    
+
+\newcommand{\spacing}{\\ \\ \\ \\ \\ \\}
+\section{Practice}
+\begin{enumerate}
+    \item For $\Delta ABC$, for which its verticies are $A(1, 2)$, $B(4, 5)$, and $C(-2, 7)$, determine the following:
+    \begin{enumerate}
+        \item The perimeter of $\Delta ABC$ \spacing
+        \item The linear equation of the median from $A$ to side $\overline{BC}$ \spacing
+        \item The linear equation of the altitude from $B$ to side $\overline{AC}$ \spacing
+        \item The linear equation of the right bisector from $C$ to side $\overline{AB}$ \spacing
+    \end{enumerate}
+
+    \item Determine the perpendicular distance between the point $A(7, 1)$ and the line going through points $B(5, -2)$ and $C(2, 14)$ \spacing
+\end{enumerate}
+
+\end{document}

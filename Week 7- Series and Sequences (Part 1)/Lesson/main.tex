@@ -1,0 +1,156 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={7in, 10in}]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\title{Series and Sequences (Part 1) Lesson\vspace{-3mm}}
+\author{2018-2019 SLSS Math Club\vspace{-5mm}}
+\date{November 21, 2018\vspace{-5mm}}
+
+\begin{document}
+\maketitle
+\section{Introduction}
+\subsection{Key Terms}
+\begin{itemize}
+    \item Sequence: An ordered list of numbers identified by a pattern or rule that may stop at some number or continue indefinitely.
+    \item Term: A single value or object in a sequence
+    \item Series: The sum of the terms in a sequence
+    \item Explicit Formula: A formula that represents any term in a sequence relative to the term number $n$.
+    \item Recursion Formula: A formula by which each term of a sequence is generated from the preceding term or terms.
+\end{itemize}
+
+\subsection{Examples}
+\begin{itemize}
+    \item $\{1, 2, 3, 4\}$ is a sequence.
+    \item $1$ is the first term in the sequence $\{1, 2, 3, 4\}$.
+    \item $1 + 2 + 3 + 4$ is the series of the sequence $\{1, 2, 3, 4\}$ .
+    \item $a_n = n$ is the explicit formula for the sequence $\{1, 2, 3, 4\}$.
+    \item $a_n = a_{n-1} + 1$ is the recursion formula for the sequence $\{1, 2, 3, 4\}$.
+\end{itemize}
+
+\section{Notation}
+\subsection{Sequences and Series Notation}
+\begin{itemize}
+    \item In sequences and series, the notation $x_n$ or $a_n$ is commonly used.
+    \begin{itemize}
+        \item $x_n$ is the term
+        \item $n$ is the term number
+    \end{itemize}
+    \item In series and partial sums, the notation $S_n$ is commonly used.
+    \begin{itemize}
+        \item $S_n$ is the sum of the series. $S_n = a_1 + a_2 + \dots + a_{n-1} + a_n$
+        \item $n$ is the number of terms
+    \end{itemize}
+\end{itemize}
+\subsection{Sigma Notation}
+Instead of the ``$\dots$" notation, sigma notation ($\Sigma$) can be used. \\ \\
+Examples:
+$$(1): \sum_{n=1}^{10} n = 1 + 2 + \dots + 9 + 10$$\\
+$$(2): \sum_{n=4}^{14} \frac{1}{n} = \frac{1}{4} + \dots + \frac{1}{13} + \frac{1}{14}$$
+\begin{itemize}
+    \item $n$ is known as the index of summation, it is the variable of the sum in sigma notation.
+    \item The bottom number is the starting point. In example 1 it is 1. In example 2 it is 4.
+    \item The top number is the ending point. In example 1 it is 10. In example 2 it is 14. 
+\end{itemize}
+\subsubsection{Writing Series in Sigma Notation}
+Example: Write $3 + 5 + 7 + 9 + \dots + 23$ in sigma notation. \\ \\
+Step 1: Determine the explicit formula ($a_n$):
+\begin{itemize}
+    \item From observation we can see that that the explicit formula of the sequence is $a_n = 2n + 1$.
+\end{itemize}
+Step 2: Determine the starting point:
+\begin{itemize}
+    \item As $2n + 1 = 3$ has the solution $n = 1$, the starting point is $n = 1$ (this goes on the bottom of the sigma sign).
+\end{itemize}
+Step 3: Determine the ending point:
+\begin{itemize}
+    \item As $2n + 1 = 23$ has the solution $n = 11$, the ending point is $n = 11$ (this goes on the top of the sigma sign).
+\end{itemize}
+Step 4: Substitute into sigma notation:
+\begin{itemize}
+    \item Substitute your known information into the following formula:
+    $$\sum_{n=Starting Point}^{Ending Point} a_n$$ \\
+    $$\sum_{n=1}^{11} (2n+1)$$
+\end{itemize} \newpage
+\section{Special Sequences and Series}
+\subsection{Arithmetic Sequences and Series}
+\subsubsection{Key Terms}
+\begin{itemize}
+    \item Arithmetic Sequence: A sequence where the difference between consecutive terms is a constant.
+    \item Common Difference: The difference between any two consecutive terms. $d = a_n - a_{n-1}$
+    \item Arithmetic Series: The sum of the terms in an arithmetic sequence.
+\end{itemize}
+\subsubsection{Examples}
+\begin{itemize}
+    \item \{1, 5, 9, 13, \dots\} is an arithmetic sequence as the difference between any two consecutive terms is constant ($4$).
+    \begin{itemize}
+        \item $1 + 5 + 9 + 13 + \dots$ is the arithmetic series of the sequence.
+    \end{itemize}
+    \item \{1, 3, 4, 10, 13\} is not an arithmetic sequence as the difference between any two consecutive terms is not constant.
+\end{itemize}
+\subsubsection{Equations}
+\begin{itemize}
+    \item $a_n = a_1 + d(n-1)$
+    \item $a_n = a_{n-1} + d$
+    \item $S_n = \frac{n}{2}(a_1 + a_n)$ or $S_n = \frac{n}{2}(2a_1 + (n-1)d)$
+    \begin{itemize}
+        \item $n$ is the term number
+        \item $a_1$ is the first term of the sequence
+        \item $a_n$ is the $n$-th term of the sequence
+        \item $S_n$ is the sum of the first $n$ terms in the sequence
+        \item $d$ is the common difference
+    \end{itemize}
+\end{itemize}
+\subsection{Geometric Sequences and Series}
+\subsubsection{Key Terms}
+\begin{itemize}
+    \item Geometric Sequence: A sequence where the ratio of consecutive terms is a constant.
+    \item Common Ratio: The ratio of any two consecutive terms in a geometric sequence. $r = \frac{a_n}{a_{n-1}}$
+    \item Geometric Series: The sum of the terms of a geometric sequence
+\end{itemize}
+\subsubsection{Examples}
+\begin{itemize}
+    \item \{1, 2, 4, 8, \dots\} is a geometric sequence as the ratio between any two consecutive terms is constant $(2)$.
+    \begin{itemize}
+        \item $1 + 2 + 4 + 8 + \dots$ is the geometric series of the sequence.
+    \end{itemize}
+    \item \{1, 5, 7, 9, 20\} is not a geometric sequence as the ratio between any two consecutive terms is not constant.
+\end{itemize}
+\newpage
+\subsubsection{Equations}
+\begin{itemize}
+    \item $a_n = a_1(r)^{n-1}$
+    \item $a_n = ra_{n-1}$
+    \item $S_n = a_1\frac{(r^n - 1)}{r - 1}$
+    \begin{itemize}
+        \item $n$ is the term number
+        \item $a_1$ is the first term of the sequence
+        \item $a_n$ is the $n$-th term of the sequence
+        \item $S_n$ is the sum of the first $n$ terms in the sequence
+        \item $r$ is the common ratio
+    \end{itemize}
+\end{itemize}
+\subsection{Telescoping Sequences and Series}
+\begin{itemize}
+    \item A telescoping series is a series whose partial sums have a fixed number of terms after cancellation. 
+    \item This cancellation technique, with part of each term canceling with part of the next term, is known as the method of differences.
+    \item This technique is useful in evaluating series with a large number of terms.
+\end{itemize}
+Example: Let $a_n = \sqrt{n} - \sqrt{n + 1}$, determine the exact value of $S_{9999}$. \\ \\
+The cancellation technique is shown below:
+\begin{align*}
+    a_1 & = \sqrt{1} - \sqrt{2} \\
+    a_2 & = \sqrt{2} - \sqrt{3} \\
+    a_3 & = \sqrt{3} - \sqrt{4} \\
+    \vdots \\ 
+    a_{9997} & = \sqrt{9997} - \sqrt{9998} \\
+    a_{9998} & = \sqrt{9998} - \sqrt{9999} \\
+    a_{9999} & = \sqrt{9999} - \sqrt{10000} \\
+\end{align*}
+We can observe that summing the terms will result in the last part of each term will cancel out with the first part of the following term, leaving us with the following:
+\begin{align*}
+    S_{9999} & = \sqrt{1}-\sqrt{10000} \\
+    S_{9999} & = -99
+\end{align*}
+As shown, telescoping series and method of differences are useful tools in evaluating series, such as the one above, with a large number of terms. \\ \\ 
+\end{document}
