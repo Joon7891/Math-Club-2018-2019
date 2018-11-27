@@ -1,0 +1,104 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={7in, 10in}]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\title{Week 1 Problem Set Solutions\vspace{-3mm}}
+\author{2018-2019 SLSS Math Club\vspace{-5mm}}
+\date{October 17, 2018 \vspace{-5mm}}
+
+\begin{document}
+\maketitle
+
+\section*{Intermediate Problems}
+\begin{enumerate}
+    \item \textbf{Determine all values of $x$ such that $x - \frac{4}{x} = -3$. Do not use guess and check.} 
+    \begin{align*}
+            x-\frac{4}{x} &= -3 \\
+            x^2-4 &= -3x \\
+            x^2+3x-4 &= 0 \\
+            (x+4)(x-1) &= 0 \\
+    \end{align*}
+    $\therefore x = -4 \text{ or } x = 1$
+    
+    \item \textbf{The points $A(5, -8), B(9, -30),$ and $C(n, n)$ lie on the same line. Determine the value of $n$.}
+    \begin{align*}
+        m &= \frac{-8-(-30)}{5-9} \\
+        m &= -5.5 \\ \\
+        y &= mx+b \\
+        -8 &= (-5.5)(5)+b \\
+        b &= 19.5 \\ \\
+        y &= -5.5x+19.5 \\
+        n &= -5.5n+19.5 \\
+        6.5n &= 19.5 \\
+        n &= 3
+    \end{align*}
+    $\therefore n = 3$
+    
+    \item \textbf{Given $x + y = 4$ and $xy = 12$, determine the value of $x^2 + 5xy + y^2$.} \\ \\
+    Carefully rearranging and factoring yields:    
+    \begin{align*}
+        &x^2+5xy+y^2 \\
+        =& x^2+2xy+y^2+3xy \\
+        =& (x+y)^2+3xy \\
+        =& (4)^2+3(12) \\
+        =& 52
+    \end{align*}
+    $\therefore x^2 + 5xy + y^2 = 52$
+\end{enumerate}
+
+\newpage
+\section*{Advanced Problems}
+\begin{enumerate}
+    \item \textbf{The functions $f$ and $g$ satisfy the following:
+    \begin{align*}
+        f(x) + g(x) & = 3x + 5 \\
+        f(x) - g(x) &= 5x + 7
+    \end{align*} for all values of $x$. Determine the value of $4f(2)g(2)$.} \\
+    \begin{align*}
+        f(x) + g(x) & = 3x + 5 \\
+        + f(x) - g(x) &= 5x + 7 \\[-10pt]
+        \cline{1-2}
+        2f(x) &= 8x+12 \\
+        f(x) &= 4x+6 \\ \\
+        g(x) &= 3x+5-f(x) \\
+        g(x) &= 3x+5-(4x+6) \\
+        g(x) &= 3x+5-4x-6 \\
+        g(x) &= -x-1 \\ \\
+        f(2) &= 4(2)+6 \\
+        f(2) &= 14 \\ \\
+        g(2) &= -2-1 \\
+        g(2) &= -3 \\ \\
+        4f(2)g(2) &= 4(14)(-3) \\
+        4f(2)g(2) &= -168
+    \end{align*}
+    $\therefore 4f(2)g(2) = -168$ 
+    
+    \item \textbf{If $a(a - 1) = b(b - 1)$, what is $a$ in terms of $b$?} \\ \\
+    Note: There was a small mistake in the problem statement, which may have caused some confusion. The statement should have included that $a \neq b$.
+        \begin{align*}
+        a(a-1) &= b(b-1) \\
+        a^2-a &= b^2-b \\
+        a^2-b^2 &= a-b \\
+        (a-b)(a+b) &= a-b \\
+    \end{align*}
+    Since $a \neq b$, we can divide both sides by $a-b$:
+    \begin{align*}
+        a+b &= 1 \\
+        a & = 1 - b
+    \end{align*}
+    $\therefore a = 1-b$
+
+    \item \textbf{If $T = x^2 + \frac{1}{x^2}$, determine $a$ and $b$ such that $x^6 + \frac{1}{x^6} = T^3 + aT + b$.}
+    \begin{align*}
+        T &= x^2+\frac{1}{x^2} \\
+        T^3 &= x^6+3x^2+\frac{3}{x^2}+\frac{1}{x^6} \\
+        T^3-3x^2-\frac{3}{x^2} &= x^6+\frac{1}{x^6} \\
+        T^3-3(x^2-\frac{1}{x^2}) &= x^6+\frac{1}{x^6} \\
+        T^3-3T &= x^6+\frac{1}{x^6} \\
+        T^3-3T &= T^3+aT+b \\
+    \end{align*}
+    $\therefore a = -3, b = 0$ 
+\end{enumerate}
+\end{document}
