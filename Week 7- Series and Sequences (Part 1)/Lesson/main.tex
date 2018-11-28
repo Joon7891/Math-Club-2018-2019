@@ -9,6 +9,7 @@
 
 \begin{document}
 \maketitle
+
 \section{Introduction}
 \subsection{Key Terms}
 \begin{itemize}
@@ -42,8 +43,10 @@
         \item $n$ is the number of terms
     \end{itemize}
 \end{itemize}
+
 \subsection{Sigma Notation}
-Instead of the ``$\dots$" notation, sigma notation ($\Sigma$) can be used. \\ \\
+Instead of the ``$\dots$" notation, sigma notation ($\Sigma$) can be used. \\
+
 Examples:
 $$(1): \sum_{n=1}^{10} n = 1 + 2 + \dots + 9 + 10$$\\
 $$(2): \sum_{n=4}^{14} \frac{1}{n} = \frac{1}{4} + \dots + \frac{1}{13} + \frac{1}{14}$$
@@ -72,6 +75,7 @@ Step 4: Substitute into sigma notation:
     $$\sum_{n=Starting Point}^{Ending Point} a_n$$ \\
     $$\sum_{n=1}^{11} (2n+1)$$
 \end{itemize} \newpage
+
 \section{Special Sequences and Series}
 \subsection{Arithmetic Sequences and Series}
 \subsubsection{Key Terms}
@@ -80,6 +84,7 @@ Step 4: Substitute into sigma notation:
     \item Common Difference: The difference between any two consecutive terms. $d = a_n - a_{n-1}$
     \item Arithmetic Series: The sum of the terms in an arithmetic sequence.
 \end{itemize}
+
 \subsubsection{Examples}
 \begin{itemize}
     \item \{1, 5, 9, 13, \dots\} is an arithmetic sequence as the difference between any two consecutive terms is constant ($4$).
@@ -88,6 +93,7 @@ Step 4: Substitute into sigma notation:
     \end{itemize}
     \item \{1, 3, 4, 10, 13\} is not an arithmetic sequence as the difference between any two consecutive terms is not constant.
 \end{itemize}
+
 \subsubsection{Equations}
 \begin{itemize}
     \item $a_n = a_1 + d(n-1)$
@@ -101,6 +107,7 @@ Step 4: Substitute into sigma notation:
         \item $d$ is the common difference
     \end{itemize}
 \end{itemize}
+
 \subsection{Geometric Sequences and Series}
 \subsubsection{Key Terms}
 \begin{itemize}
@@ -108,6 +115,7 @@ Step 4: Substitute into sigma notation:
     \item Common Ratio: The ratio of any two consecutive terms in a geometric sequence. $r = \frac{a_n}{a_{n-1}}$
     \item Geometric Series: The sum of the terms of a geometric sequence
 \end{itemize}
+
 \subsubsection{Examples}
 \begin{itemize}
     \item \{1, 2, 4, 8, \dots\} is a geometric sequence as the ratio between any two consecutive terms is constant $(2)$.
@@ -115,8 +123,8 @@ Step 4: Substitute into sigma notation:
         \item $1 + 2 + 4 + 8 + \dots$ is the geometric series of the sequence.
     \end{itemize}
     \item \{1, 5, 7, 9, 20\} is not a geometric sequence as the ratio between any two consecutive terms is not constant.
-\end{itemize}
-\newpage
+\end{itemize} \newpage
+
 \subsubsection{Equations}
 \begin{itemize}
     \item $a_n = a_1(r)^{n-1}$
@@ -130,13 +138,15 @@ Step 4: Substitute into sigma notation:
         \item $r$ is the common ratio
     \end{itemize}
 \end{itemize}
+
 \subsection{Telescoping Sequences and Series}
 \begin{itemize}
     \item A telescoping series is a series whose partial sums have a fixed number of terms after cancellation. 
     \item This cancellation technique, with part of each term canceling with part of the next term, is known as the method of differences.
     \item This technique is useful in evaluating series with a large number of terms.
 \end{itemize}
-Example: Let $a_n = \sqrt{n} - \sqrt{n + 1}$, determine the exact value of $S_{9999}$. \\ \\
+Example: Let $a_n = \sqrt{n} - \sqrt{n + 1}$, determine the exact value of $S_{9999}$. \\ 
+
 The cancellation technique is shown below:
 \begin{align*}
     a_1 & = \sqrt{1} - \sqrt{2} \\
@@ -152,5 +162,5 @@ We can observe that summing the terms will result in the last part of each term 
     S_{9999} & = \sqrt{1}-\sqrt{10000} \\
     S_{9999} & = -99
 \end{align*}
-As shown, telescoping series and method of differences are useful tools in evaluating series, such as the one above, with a large number of terms. \\ \\ 
+As shown, telescoping series and method of differences are useful tools in evaluating series, such as the one above, with a large number of terms. 
 \end{document}
