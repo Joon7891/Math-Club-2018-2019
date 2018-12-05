@@ -136,6 +136,100 @@
     
     \newpage
 
-    \item \textbf{An arithmetic sequence ${a_n}$ satisfies $b_n = (\frac{1}{2})^{a_n}$. Given that $b_1 + b_2 + b_3 = \frac{21}{8}$ and $b_1b_2b_3 = \frac{1}{8}$, determine $a_n$.}
+    \item \textbf{An arithmetic sequence ${a_n}$ satisfies $b_n = (\frac{1}{2})^{a_n}$. Given that $b_1 + b_2 + b_3 = \frac{21}{8}$ and $b_1b_2b_3 = \frac{1}{8}$, determine $a_n$.} \\
+    
+    We know that:
+    \begin{align*}
+        a_1 & = a_1 \\
+        a_2 & = a_1 + d \\
+        a_3 & = a_1 + 2d
+    \end{align*}
+    
+    By using the above properties, we obtain the following:
+    \begin{align*}
+        b_1 & = (\frac{1}{2})^{a_1} \\
+        b_2 & = (\frac{1}{2})^{a_1 + d} \\
+        b_3 & = (\frac{1}{2})^{a_1 + 2d}
+    \end{align*}
+    
+    Substituting $b_1, b_2$ and $b_3$ into the second equation:
+    \begin{align*}
+        b_1b_2b_3 & = \frac{1}{8} \\
+        (\frac{1}{2})^{a_1}(\frac{1}{2})^{a_1 + d}(\frac{1}{2})^{a_1 + 2d} & = \frac{1}{8} \\
+        (\frac{1}{2})^{3a_1 + 3d} & = (\frac{1}{2})^3 \\
+        (\frac{1}{2})^{a_1 + d} & = (\frac{1}{2})^1 \\
+        a_1 + d & = 1 \\ 
+        a_1 & = 1 - d
+    \end{align*}
+    
+    Substituting $b_1, b_2, b_3,$ and $a_1 = 1- d$ into the first equation:
+    \begin{align*}
+        b_1 + b_2 + b_3 & = \frac{21}{8} \\
+        (\frac{1}{2})^{a_1} + (\frac{1}{2})^{a_1 + d} + (\frac{1}{2})^{a_1 + 2d} & = \frac{21}{8} \\
+        (\frac{1}{2})^{1 - d} + (\frac{1}{2})^{1 - d + d} + (\frac{1}{2})^{1 - d + 2d} & = \frac{21}{8} \\
+        (\frac{1}{2})^{1 - d} + (\frac{1}{2})^{1} + (\frac{1}{2})^{1 + d} & = \frac{21}{8} \\
+        (\frac{1}{2})[(\frac{1}{2})^{-d} + 1 + (\frac{1}{2})^{d}] & = \frac{21}{8} \\
+        (\frac{1}{2})^{-d} + 1 + (\frac{1}{2})^{d} & = \frac{21}{4} \\
+        1 + (\frac{1}{2})^d + (\frac{1}{2})^{2d} & = \frac{21}{4}(\frac{1}{2})^d \\
+        0 & = (\frac{1}{2})^{2d} - \frac{17}{4}(\frac{1}{2})^{d} + 1
+    \end{align*} \newpage
+    
+    Given the equation is a quadratic in terms of $(\frac{1}{2})^d$, we can solve for $d$ as follows:
+    \begin{align*}
+        0 & = (\frac{1}{2})^{2d} - \frac{17}{4}(\frac{1}{2})^{d} + 1 \\
+        0 & = 4(\frac{1}{2})^{2d} - 17(\frac{1}{2})^{d} + 4 \\
+        0 & = [4(\frac{1}{2})^d - 1][(\frac{1}{2})^d - 4]
+    \end{align*}
+    
+    Case 1: $4(\frac{1}{2})^d - 1 = 0$ \\
+    
+    Solving for $a_1$:
+    \begin{align*}
+        0 & = 4(\frac{1}{2})^d - 1 \\
+        0 & = (\frac{1}{2})^d - \frac{1}{4} \\
+        (\frac{1}{2})^d & = (\frac{1}{2})^2 \\
+        d & = 2
+    \end{align*}
+    
+    Solving for $d$:
+    \begin{align*}
+        a_1 & = 1 - d \\
+        a_1 & = 1 - 2 \\
+        a_1 & = -1
+    \end{align*}
+    
+    Therefore,
+    \begin{align*}
+        a_n & = a_1 + d(n - 1) \\
+        a_n & = -1 + 2(n - 1) \\
+        a_n & = 2n - 3
+    \end{align*}
+    
+    Case 2: $(\frac{1}{2})^d - 4 = 0$ \\
+    
+    Solving for $a_1$:
+    \begin{align*}
+        0 & = (\frac{1}{2})^d - 1 \\
+        0 & = (\frac{1}{2})^d - (\frac{1}{2})^{-2} \\
+        (\frac{1}{2})^d & = (\frac{1}{2})^{-2} \\
+        d & = -2
+    \end{align*}
+    
+    Solving for $d$:
+    \begin{align*}
+        a_1 & = 1 - d \\
+        a_1 & = 1 - (-2) \\
+        a_1 & = 3
+    \end{align*}
+    
+    Therefore,
+    \begin{align*}
+        a_n & = a_1 + d(n - 1) \\
+        a_n & = 3 -2(n - 1) \\
+        a_n & = -2n + 5
+    \end{align*}
+    
+    Therefore, $a_n = 2n - 3$ or $a_n = -2n + 5$.
+    
 \end{enumerate}
 \end{document}
