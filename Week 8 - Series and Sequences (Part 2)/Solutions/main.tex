@@ -1,0 +1,141 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={7in, 10in}]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\title{Week 8 Problem Set Solutions \vspace{-3mm}}
+\author{2018-2019 SLSS Math Club\vspace{-5mm}}
+\date{November 28, 2018\vspace{-5mm}}
+
+\newcommand{\bspace}{\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\} 
+\newcommand{\ispace}{\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\}
+
+\begin{document}
+\maketitle
+
+\section*{Basic Problems}
+\begin{enumerate}
+    \item \textbf{Determine the sum of $200 - 199 + 198 - 197 + 196 + \dots + 2 - 1$.} \\
+    
+    From observation, we notice that pairing up every two consecutive terms yields $1$ as follows:
+    \begin{align*}
+        S & = 200 - 199 + 198 - 197 + \dots + 2 - 1 \\
+        & = (200 - 199) + (198 - 197) + \dots + (2 - 1) \\
+        & = 1 + 1 + \dots + 1
+    \end{align*}
+    
+    Since there are $200$ terms, there are $100 $ pairs, yielding the answer as follows:
+    \begin{align*}
+        S & = 1 + 1 + \dots + 1 \\
+        & = 100(1) \\
+        & = 100
+    \end{align*}
+    
+    Therefore, the sum is $100$.
+    
+    \item \textbf{Given that the sum of the first $n$ terms of a sequence is $n(n + 1)(n + 2)$, determine the 10th term of the sequence.} \\
+    
+    Given that $$S_n = S_{n - 1} + a_n$$, we can solve for $a_{10}$ as follows:
+    \begin{align*}
+        S_{10} & = S_{9} + a_{10} \\
+        a_{10} & = S_{10} - S_{9} \\
+        a_{10} & = (10)(10 + 1)(10 + 2) - (9)(9 + 1)(9 + 2) \\
+        a_{10} & = 1320 - 990 \\
+        a_{10} & = 300
+    \end{align*}
+    
+    Therefore, the $10$th term of the sequence is $330$.
+    
+    \newpage
+    
+    \item \textbf{Given that in an arithmetic sequence $t_p = q^2$ and $t_q = p^2$, determine the common difference.} \\
+    
+    Given that $$d = a_{n + 1} - a_{n}$$, we can solve for $d$ by setting $p = n$ and $q = n + 1$.
+    \begin{align*}
+        d &= a_{n + 1} - a_{n} \\
+        d & = (n)^2 - (n + 1)^2 \\
+        d & = n^2 - n^2 - 2n - 1 \\
+        d & = -2n - 1
+    \end{align*}
+    
+    Therefore, the common difference is $-2n - 1$.
+    
+\end{enumerate}
+
+\section*{Intermediate Problems}
+\begin{enumerate}
+    \item \textbf{The sum of the first $n$ terms in a sequence is $S_n = 33n - n^2$. Show that this is an arithmetic sequence.} \\
+    
+    If we can solve for $a_n$ and show that it satisfies the general formula for an arithmetic sequence, we can prove that it is an arithmetic sequence. \\
+    
+    Given that $$S_n = S_{n - 1} + a_n$$, we can solve for $a_{n}$ as follows:
+    \begin{align*}
+        S_n & = S_{n - 1} + a_n \\
+        a_n & = S_{n} - S_{n - 1} \\
+        a_n & = 33n - n^2 - [33(n - 1) - (n - 1)^2] \\
+        a_n & = 33n - n^2 - 33n + 33 + n^2 - 2n + 1 \\
+        a_n & = -2n + 34
+    \end{align*}
+    
+    Therefore, as $a_n$ is of the general form for an arithmetic sequence: $a_n = a_1 + d(n - 1)$, our sequence is an arithmetic sequence. 
+    
+    \item \textbf{If $a, b, c,$ and $d$ form a geometric sequence, prove that $(a + b)^2, (b + c)^2, (c + d)^2$ also form a geometric sequence.} \\
+    
+    As $a, b, c, d$ form a geometric sequence:
+    \begin{align*}
+        a & = a \\
+        b & = ar \\
+        c & = ar^2 \\
+        d & = ar^3
+    \end{align*}
+    
+    As such,
+    \begin{align*}
+        (a + b)^2 & = (a + ar)^2 \\ \\
+        (b + c)^2 & = (ar + ar^2)^2 \\
+        (b + c)^2 & = r^2(a + ar)^2 \\ \\
+        (c + d)^2 & = (ar^2 + ar^3)^2 \\
+        (c + d)^2 & = r^4(a + ar)^2
+    \end{align*}
+    
+    Therefore, as there is a common ratio, $r^2$ between the terms $(a + b)^2, (b + c)^2,$ and $(c + d)^2$, the sequence is a geometric sequence.
+    
+\end{enumerate}
+
+\section*{Advanced Problems}
+\begin{enumerate}
+    \item \textbf{Suppose a sequence ${a_n}$with $a_1 = 3$ satisfies $a_{n + 1} = a_n + 2(3)^n + 1$. Determine $a_n$.} \\
+    
+    As we can isolate $a_{n + 1} - a_{n}$ on one side, we can utilize telescoping series to solve for $a_n$. \\
+    
+    Isolating $a_{n + 1} - a_n$:
+    \begin{align*}
+        a_{n+1} & = a_n + 2(3)^n + 1 \\
+        a_{n + 1} - a_n & = 2(3)^n + 1
+    \end{align*}
+    
+    Applying telescoping series cancellation technique:
+    \begin{align*}
+        a_{2} - a_1 & = 2(3)^1 + 1 \\
+        a_{3} - a_2 & = 2(3)^2 + 1 \\
+        a_{2} - a_3 & = 2(3)^3 + 1 \\
+        \vdots & \\
+        a_{n-1} - a_{n - 2} & = 2(3)^{n - 2} + 1 \\
+        a_{n} - a_{n - 1} & = 2(3)^{n - 1} + 1
+    \end{align*}
+    
+    By summing all of the above equations, we obtain the following:
+    \begin{align*}
+        a_{n} - a_{1} & = 2(3)^1 + 2(2)^2 + \dots + 2(3)^{n - 2} + 2(3)^{n - 1} + 1(n - 1) \\
+        a_{n} - a_{n - 1} & = 2(3)[\frac{3^{n - 1} - 1}{3 - 1}] + n - 1 \\
+        a_{n} - 3 & = 3^n - 3 + n - 1 \\
+        a_{n} & = 3^n + n - 1
+    \end{align*}
+
+    Therefore, $a_n = 3^n + n - 1$.
+    
+    \newpage
+
+    \item \textbf{An arithmetic sequence ${a_n}$ satisfies $b_n = (\frac{1}{2})^{a_n}$. Given that $b_1 + b_2 + b_3 = \frac{21}{8}$ and $b_1b_2b_3 = \frac{1}{8}$, determine $a_n$.}
+\end{enumerate}
+\end{document}
