@@ -11,11 +11,10 @@
 \maketitle
 
 \section*{Problems}
-
 \begin{enumerate}
     \item \textbf{Given that the sums of the reciprocals of the roots of the quadratic $$ 0 = 3x^2 + 7x + k$$ is $\displaystyle{\frac{7}{3}}$, determine $k$. [5 Marks]} \\
     
-    Let $r1$ and $r2$ represent the roots of the above quadratic.  From Vieta's formulas, we know the following:
+    Let $r_1$ and $r_2$ represent the roots of the quadratic.  From Vieta's formulas, we know that:
     \begin{align*}
         r_1r_2 &= \frac{k}{3} \\
         r_1 + r_2 &= -\frac{7}{3}
@@ -29,12 +28,102 @@
         k &= -3
     \end{align*}
     
-    Therefore, $k = -3$.
+    Therefore, $k = -3$. 
     
-    \item \textbf{Given that $$\log_2(x), 1 + \log_4(x), \log_8(4x)$$ are consecutive terms of a geometric sequence, determine all possible values of $x$. [8 Marks]} 
+    \item \textbf{Given that $$\log_2(x), 1 + \log_4(x), \log_8(4x)$$ are consecutive terms of a geometric sequence, determine all possible values of $x$. [8 Marks]} \\
     
-    \item \textbf{Determine all values of $k$ for which the equation $$(2^x) + 2^{-x} = 3$$ has exactly one root. [8 Marks]}
+    We will convert each logarithm into base $2$ as follows:
+    \begin{align*}
+        t_2 &= 1 + \log_4(x) \\
+        t_2 &= 1 + \frac{\log(x)}{\log(4)} \\
+        t_2 &= 1 + \frac{\log(x)}{2\log(2)} \\
+        t_2 &= 1 + \frac{1}{2}\log_2(x)
+    \end{align*}
     
-    \item \textbf{Let $f(x) = 2^{kx} + 9$, where $k$ is a real number. If $$f(3):f(6) = 1:3$$, determine the value of $f(9) - f(3)$. [10 Marks]}
+    \begin{align*}
+        t_3 &= \log_8(4x) \\
+        t_3 &= \frac{\log(4x)}{\log(8)} \\
+        t_3 &= \frac{\log(4x)}{3\log(2)} \\
+        t_3 &= \frac{1}{3}\log_2(4x) \\
+        t_3 &= \frac{1}{3}(\log_2(4) + \log_2(x)) \\
+        t_3 &= \frac{1}{3}[2 + \log_2(x)]
+    \end{align*}
+    
+    Let $y = \log_2(x)$, which yields the following:
+    \begin{align*}
+        t_1 &= y \\
+        t_2 &= 1 + \frac{y}{2} \\
+        t_3 &= \frac{2}{3} + \frac{y}{3}
+    \end{align*}
+    
+    Noting that if $t_1, t_2,$ and $t_3$ form a geometric sequence, consecutive terms share a common ratio. That is, $$\frac{t_{n + 1}}{t_n} = r$$ Noting this, we can state the following:
+    \begin{align*}
+        \frac{t_2}{t_1} &= \frac{t_3}{t_2} \\
+        \frac{1 + \frac{y}{2}}{y} &= \frac{\frac{2}{3} + \frac{y}{3}}{1 + \frac{y}{2}} \\
+        (1 + \frac{y}{2})(1 + \frac{y}{2}) &= y(\frac{2}{3} + \frac{y}{3}) \\
+        1 + y + \frac{1}{4}y^2 &= \frac{2}{3}y + \frac{1}{3}y^2 \\
+        12 + 12y + 3y^2 &= 8y + 4y^2 \\
+        0 &= y^2 - 4y - 12 \\
+        0 &= (y - 6)(y + 2)
+    \end{align*}
+
+    Therefore, $y = 6$ or $y = -2$, implying the following:
+    \begin{align*}
+        \log_2(x) &= -2 \\
+        x &= 2^{-2} \\
+        x &= \frac{1}{4} \\ \\
+        \log_2(x) &= 6 \\
+        x &= 2^6 \\
+        x &= 64
+    \end{align*}
+
+    Therefore, $x = \frac{1}{4}$ or $64$.
+
+    \item \textbf{Determine all values of $k$ for which the equation $$(2^x) + 2^{-x} = 3k$$ has exactly one root. [8 Marks]} \\
+    
+    Let $y = 2^x$, yielding the following:
+    \begin{align*}
+        y + y^{-1} &= 3k \\
+        y^2 + 1 &= 3ky \\
+        0 &= y^2 - 3ky + 1
+    \end{align*}
+    
+    In order for the quadratic to have exactly one root, the discriminant must be equal to $0$:
+    \begin{align*}
+        D &= (-3k)^2 -4(1)(1) \\
+        0 & = 9k^2 -4 \\
+        0 & = (3k - 2)(3k + 2)
+    \end{align*}
+    
+    Note: Since $2^x, 2^{-x} > 0 \implies 2^x + 2^{-x} > 0$, the solution $k = -\frac{2}{3}$ is extraneous. \\
+    
+    Therefore, $k = \frac{2}{3}$
+    
+    \item \textbf{Let $f(x) = 2^{kx} + 9$, where $k$ is a real number. If $$f(3):f(6) = 1:3$$, determine the value of $f(9) - f(3)$. [10 Marks]} \\
+
+    Given $f(3):f(6) = 1:3$, we can state the following:
+    \begin{align*}
+        \frac{f(6)}{f(3)} &= 3 \\
+        f(6) &= 3f(3) \\
+        2^{6x} + 9 &= 3(2^{3x} + 9) \\
+        (2^{3x})^2 + 9 &= 3 (2^{3x}) + 27 \\
+        0 &= (2^{3x})^2 - 3(2^{3x}) - 18 \\
+        0 &= (2^{3x} - 6)(2^{3x} + 3)
+    \end{align*}
+
+    As $2^{3x} > 0$, $2^{3x} = 6$ as the solution $2^{3x} = -3$ is extraneous. \\
+    
+    We can solve for $f(9) - f(3)$ as follows:
+    \begin{align*}
+         f(9) - f(3) &= 2^{9x} + 9 - (2^{3x} + 9) \\
+          &= 2^{9x} - 2^{3x} \\
+          &= 2^{3x}(2^{6x} - 1) \\
+          &= 2^{3x}(2^{3x} + 1)(3^{3x} - 1) \\
+          &= (6)(7)(5) \\
+          &= 210
+    \end{align*}
+
+    Therefore, $f(9) - f(3) = 210$
+    
 \end{enumerate}
 \end{document}
