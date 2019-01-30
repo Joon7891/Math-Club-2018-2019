@@ -5,7 +5,7 @@
 
 \title{AM-GM Inequality Lesson\vspace{-3mm}}
 \author{2018-2019 SLSS Math Club\vspace{-5mm}}
-\date{February 6, 2018\vspace{-5mm}}
+\date{February 6, 2019\vspace{-5mm}}
 
 \begin{document}
 \maketitle
@@ -13,17 +13,10 @@
 \section{Definitions}
 \subsection{Arithmetic Mean}
 A type of mean, calculated as the sum of $n$ numbers divided by $n$.
-
-\begin{equation*}
-    \text{AM} = \frac{a_{1} + a_{2} + \dots + a_{n - 1} + a_{n}}{n}
-\end{equation*}
+$$\text{AM} = \frac{a_{1} + a_{2} + \dots + a_{n - 1} + a_{n}}{n}$$
 
 \subsection{Geometric Mean}
-A type of mean, calculated as the $n$-th root of the product of $n$ numbers.
-
-\begin{equation*}
-    \text{GM} = \sqrt[n]{a_{1} a_{2} \dots a_{n - 1} a_{n}}
-\end{equation*}
+A type of mean, calculated as the $n$-th root of the product of $n$ numbers. $$\text{GM} = \sqrt[n]{a_{1} a_{2} \dots a_{n - 1} a_{n}}$$
 
 \subsection{Arithmetic Mean - Geometric Mean Inequality}
 States that the arithmetic mean of a given set is equal to or greater than the geometric mean of the same set if all elements are non-negative ($a_i \geq 0$)
@@ -34,17 +27,32 @@ States that the arithmetic mean of a given set is equal to or greater than the g
 \end{align*}
 
 \subsubsection{Equality Case}
-Arithmetic and geometric means are equal if and only if all elements are identical.
-
-\begin{equation*}
-    a_{1} = a_{2} = \dots = a_{n - 1} = a_{n}
-\end{equation*}
+Arithmetic and geometric means are equal if and only if all elements are identical. $$a_{1} = a_{2} = \dots = a_{n - 1} = a_{n}$$
 
 \section{Applications}
 \subsection{Proving Inequalities}
+\subsubsection*{Example}
+Prove the following inequality: $$2a^3 + b^3 \geq 3a^2b$$ $\forall x, y > 0$.
+
+\subsubsection*{Solution}
+We can rewrite the $\text{LHS}$ of the equation as follows: $$2a^3 + b^3 = a^3 + a^3 + b^3$$
+
+Applying AM-GM Mean Inequality:
+\begin{align*}
+    \text{AM} &= \frac{a^3 + a^3 + b^3}{3} \\
+    \text{GM} &= \sqrt[3]{a^3 a^3 b^3} \\
+              &= a^2 b \\
+  \frac{a^3 + a^3 + b^3}{3} &\geq a^2 b \\
+  2a^3 + b^3 &\geq 3a^2 b
+\end{align*} 
+
+Therefore, via AM-GM Inequality, $2a^3 + b^3 \geq 3a^2 b$, as desired.
 
 \subsection{Simplifying Equations}
+
+
 \subsection{Determining Minimum Value}
 \subsection{Determining Maximum Value}
+\textbf{Example:} Determine the minimum value of $x^2 + 4xy + 4y^2 + 2z^2$
 
 \end{document}
