@@ -26,8 +26,10 @@ States that the arithmetic mean of a given set is equal to or greater than the g
      \frac{a_{1} + a_{2} + \dots + a_{n - 1} + a_{n}}{n} & \geq \sqrt[n]{a_{1} a_{2} \dots a_{n - 1} a_{n}}
 \end{align*}
 
-\subsubsection{Equality Case}
+\subsubsection*{Equality Case}
 Arithmetic and geometric means are equal if and only if all elements are identical. $$a_{1} = a_{2} = \dots = a_{n - 1} = a_{n}$$
+
+\newpage
 
 \section{Applications}
 \subsection{Proving Inequalities}
@@ -36,8 +38,7 @@ Prove the following inequality: $$2a^3 + b^3 \geq 3a^2b$$ $\forall x, y > 0$.
 
 \subsubsection*{Solution}
 We can rewrite the $\text{LHS}$ of the equation as follows: $$2a^3 + b^3 = a^3 + a^3 + b^3$$
-
-Applying AM-GM Mean Inequality:
+Applying AM-GM Inequality:
 \begin{align*}
     \text{AM} &= \frac{a^3 + a^3 + b^3}{3} \\
     \text{GM} &= \sqrt[3]{a^3 a^3 b^3} \\
@@ -45,14 +46,49 @@ Applying AM-GM Mean Inequality:
   \frac{a^3 + a^3 + b^3}{3} &\geq a^2 b \\
   2a^3 + b^3 &\geq 3a^2 b
 \end{align*} 
-
 Therefore, via AM-GM Inequality, $2a^3 + b^3 \geq 3a^2 b$, as desired.
 
 \subsection{Simplifying Equations}
+\subsubsection*{Example}
+Let $a = 10$, solve for $b$ and $c$ if $$(a + b + c)^3 = 27abc$$
 
+\subsubsection*{Solution}
+Rearranging the equation, we achieve the following:
+\begin{align*}
+    (a + b + c)^3 = 27abc \\
+    a + b + c = 3 \sqrt[3]{abc} \\
+    \frac{a + b + c}{3} = \sqrt[3]{abc}
+\end{align*}
+Knowing that the equality case of AM-GM Inequality occurs if and only if $$a = b = c$$, our equality can be simplified to $a = b = c$ or $b = c = 10$
 
 \subsection{Determining Minimum Value}
+\subsubsection*{Example}
+Determine the minimum value of $$x^2 + 4xy + 4y^2 + 2z^3$$ if $x, y, z \geq 0$ and $xyz = 32$.
+
+\subsubsection*{Solution}
+Applying AM-GM Inequality, we achieve the following:
+\begin{align*}
+    \frac{x^2 + 4xy + 4y^2 + 2z^3}{4} &\geq \sqrt[4]{(x^2)(4xy)(4y^2)(2z^3)} \\
+    x^2 + 4xy + 4y^2 + 2z^3 &\geq 4 \sqrt[4]{(x^2)(4xy)(4y^2)(2z^3)} \\
+    x^2 + 4xy + 4y^2 + 2z^3 &\geq \sqrt[4]{32x^3y^3z^3} \\
+    x^2 + 4xy + 4y^2 + 2z^3 &\geq \sqrt[4]{32(32)^3} \\
+    x^2 + 4xy + 4y^2 + 2z^3 &\geq 32
+\end{align*}
+Therefore, the minimum value of $x^2 + 4xy + 4y^2 + 2z^3$ is $32$.
+
 \subsection{Determining Maximum Value}
-\textbf{Example:} Determine the minimum value of $x^2 + 4xy + 4y^2 + 2z^2$
+\subsubsection*{Example}
+Determine the maximum value of $$4xy - x^2y - xy^2$$
+
+\subsubsection*{Solution}
+Factoring our equation and applying AM-GM Inequality, we achieve the following:
+\begin{align*}
+    &= 4xy - x^2y - xy^2 \\
+    &= xy(4 - x - y) \\
+    \frac{x + y + (4 - x - y)}{3} \geq \sqrt[3]{xy(4 - x - y)} \\
+    \frac{4}{3} \geq \sqrt[3]{xy(4 - x - y)} \\
+    \frac{64}{9} \geq xy(4 - x - y)
+\end{align*}
+Therefore, the maximum value of $xy(4 - x - y)$ is $\frac{64}{9}$
 
 \end{document}
