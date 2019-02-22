@@ -1,0 +1,115 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={7in, 10in}]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\title{Week 10 Problem Set Solutions\vspace{-3mm}}
+\author{2018-2019 SLSS Math Club\vspace{-5mm}}
+\date{February 26, 2019\vspace{-5mm}}
+
+\begin{document}
+\maketitle
+
+\section*{Basic Problems}
+\begin{enumerate}
+    \item \textbf{Determine the minimum value of $4x + \frac{9}{x}$, where $x > 0$.}
+    
+    Using AM-GM Inequality for $4x + \frac{9}{x}$, we achieve the following:
+    \begin{align*}
+        \frac{4x + \frac{9}{x}}{2} &\geq \sqrt{4x(\tfrac{9}{x})} \\
+        \frac{4x + \frac{9}{x}}{2} &\geq \sqrt{36} \\
+        4x + \frac{9}{x} &\geq 12
+    \end{align*}
+    
+    Therefore the minimum value of $4x + \frac{9}{x}$ is $6$.
+    
+    \item \textbf{Determine the minimum value of $x^2 + y^2 + z^2$, where $x, y, z > 0$ and $xyz = 1$.} 
+    
+    Using AM-GM Inequality for $x^2 + y^2 + z^2$, we achieve the following:
+    \begin{align*}
+        \frac{x^2 + y^2 + z^2}{3} &\geq \sqrt[3]{x^2y^2z^2} \\
+        \frac{x^2 + y^2 + z^2}{3} &\geq \sqrt[3]{(xyz)^2} \\
+        x^2 + y^2 + z^2 &\geq 3 \sqrt[3]{(1)^2} \\
+        x^2 + y^2 + z^2 &\geq 3
+    \end{align*}
+    
+    Therefore, the minimum value of $x^2 + y^2 + z^2$ is $3$.
+\end{enumerate}
+
+\section*{Intermediate Problems}
+\begin{enumerate}
+    \item \textbf{Determine the maximum value of $xy(72 - 3x - 4y)$, where $x, y > 0$.}
+    
+    The expression $xy(72 - 3x - 4y)$ can be rewritten as follows:
+    \begin{align*}
+        xy(72 - 3x - 4y) = \tfrac{1}{12}(3x)(4y)(72 - 3x - 4y)
+    \end{align*}
+    
+    Applying AM-GM Inequality using $(3x)(4y)(72 - 3x - 4y)$, we achieve the following:
+    \begin{align*}
+        \frac{3x + 4y + 72 - 3x - 4y}{3} &\geq \sqrt[3]{(3x)(4y)(72 - 3x - 4y)} \\
+        \frac{72}{3} &\geq \sqrt[3]{(3x)(4y)(72 - 3x - 4y)} \\
+        13\;824 &\geq (3x)(4y)(72 - 3x - 4y)
+    \end{align*}
+    
+    The maximum of $(3x)(4y)(72 - 3x - 4y)$ is $13,824$, the maximum of $xy(72 - 3x - 4y)$ is $1,152$.
+    
+    \item \textbf{Let $a$ be a positive constant. Minimize $x^2 + \frac{a}{x}$, where $x > 0$.} 
+    
+    Splitting $\frac{a}{x}$ into two components, we are able to rearrange the LHS as follows:
+    \begin{align*}
+        x^2 + \frac{a}{x} = x^2 + \frac{a}{2x} + \frac{a}{2x}
+    \end{align*}
+    
+    Applying AM-GM Inequality on this rearranged equation, we achieve the following:
+    \begin{align*}
+        \frac{x^2 + \frac{a}{2x} + \frac{a}{2x}}{3} &\geq \sqrt[3]{(x^2)(\tfrac{a}{2x})(\tfrac{a}{2x})} \\
+        \frac{x^2 + \frac{a}{2x} + \frac{a}{2x}}{3} &\geq \sqrt[3]{\tfrac{a^2}{4}} \\
+        x^2 + \frac{a}{2x} + \frac{a}{2x} &\geq 3 \sqrt[3]{\frac{a^2}{4}} \\
+        x^2 + \frac{a}{x} &\geq 3 \sqrt[3]{\frac{a^2}{4}}
+    \end{align*}
+    
+    Therefore, by AM-GM Inequality, $x^2 + \frac{a}{x}$ is minimized to $3 \sqrt[3]{\frac{a^2}{4}}$
+    
+\end{enumerate}
+
+\section*{Advanced Problems}
+\begin{enumerate}
+    \item \textbf{For all $a, b, c > 0$, prove that $$(a + b)(b + c)(c + a) \geq 8abc$$}
+    
+    Simplifying the LHS, we achieve the following:
+    \begin{equation*}
+        (a + b)(b + c)(c + a) = abc + ab^2 + a^2b + a^2c + ac^2 +b^2c + bc^2 + abc
+    \end{equation*}
+    
+    Applying AM-GM Inequality on the expanded equation, we achieve the following:
+    \begin{align*}
+        \frac{abc + ab^2 + a^2b + a^2c + ac^2 +b^2c + bc^2 + abc}{8} &\geq \sqrt[8]{(abc)(ac^2)(a^2b)(a^2c)(ac^2)(b^2c)(bc^2)(abc)} \\
+        \frac{abc + ab^2 + a^2b + a^2c + ac^2 +b^2c + bc^2 + abc}{8} &\geq \sqrt[8]{a^8 b^8 c^8} \\
+         \frac{abc + ab^2 + a^2b + a^2c + ac^2 +b^2c + bc^2 + abc}{8} &\geq abc \\
+         abc + ab^2 + a^2b + a^2c + ac^2 +b^2c + bc^2 + abc & \geq 8abc \\
+         (a + b)(b + c)(c + a) &\geq 8abc
+    \end{align*}
+    
+    Therefore, by AM-GM Inequality, $(a + b)(b + c)(c + a) \geq 8abc$, as desired.
+    
+    \newpage
+    
+    \item \textbf{For all integers $n > 1$, prove that $$\Big(\frac{1}{2} + \frac{2}{3} + \dots + \frac{n}{n+1}\Big)^n > \frac{n^n}{n + 1}$$}
+    
+    Applying AM-GM Inequality for $\frac{1}{2} + \frac{2}{3} + \frac{n}{n + 1}$, we achieve the following:
+    \begin{align*}
+        \frac{\frac{1}{2} + \frac{2}{3} + \dots + \frac{n}{n + 1}}{n} &\geq \sqrt[n]{(\tfrac{1}{2})(\tfrac{2}{3})\dots (\tfrac{n}{n + 1})} \\
+        \frac{\frac{1}{2} + \frac{2}{3} + \dots + \frac{n}{n + 1}}{n} &\geq \sqrt[n]{\tfrac{1}{n + 1}} \\
+        \Big(\frac{\frac{1}{2} + \frac{2}{3} + \dots + \frac{n}{n + 1}}{n} \Big)^n &\geq \frac{1}{n + 1} \\
+        \Big(\frac{1}{2} + \frac{2}{3} + \dots + \frac{n}{n + 1} \Big)^n &\geq \frac{n^n}{n + 1}
+    \end{align*}
+    
+    Given that the equality case of the inequality is achieved if only if all terms are equal. Since this is not the case, our inequality simplifies to:
+    \begin{equation*}
+        \Big(\frac{1}{2} + \frac{2}{3} + \dots + \frac{n}{n + 1} \Big)^n & > \frac{n^n}{n + 1}
+    \end{equation*}
+    
+    Therefore, by AM-GM Inequality, $\big(\frac{1}{2} + \frac{2}{3} + \dots + \frac{n}{n + 1} \big)^n > \frac{n^n}{n + 1}$, as desired.
+\end{enumerate}
+\end{document}
