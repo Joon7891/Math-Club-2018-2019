@@ -6,6 +6,7 @@
 \usepackage{tabularx}
 \setlength{\parindent}{0pt}
 \newcommand{\ndiv}{\hspace{-4pt}\not|\hspace{2pt}}
+\newcommand{\tdiv}{\; | \;}
 
 \title{Number Theory (Part 1) Lesson\vspace{-3mm}}
 \author{2018-2019 SLSS Math Club\vspace{-5mm}}
@@ -32,16 +33,16 @@ A divisor of $n$, also called a factor of $n$, is an integer $m \neq 0$, such th
 
 \textbf{Examples:}
 \begin{align*}
-    2\; | \; 10 && 6\; \ndiv \; 15 && 7 \; | \; 42
+    2 \tdiv 10 && 6 \ndiv 15 && 7  \tdiv 42
 \end{align*}
 
 \subsection{Properties}
 For all integers $a, b, c$, the following properties hold: 
 \begin{itemize}
-    \item $1 \; | \; a, -1 \; | \; a, a \; | \; 0,$ and $a \; | \; a$
-    \item If $a \; | \; b$ and $b \; | \; c$, then $a \; | \; c$
-    \item If $a \; | \; b$ and $b  \; | \; a$, then $a = b$ or $a = -b$
-    \item If $a \; | \; b$ and $a \; | \; c$, then $a  \; | \; (n \cdot b + m \cdot c)$ for all integers $n$ and $m$
+    \item $1  \tdiv a, -1  \tdiv a, a  \tdiv 0,$ and $a  \tdiv a$
+    \item If $a  \tdiv b$ and $b  \tdiv c$, then $a  \tdiv c$
+    \item If $a  \tdiv b$ and $b   \tdiv a$, then $a = b$ or $a = -b$
+    \item If $a  \tdiv b$ and $a  \tdiv c$, then $a   \tdiv (n \cdot b + m \cdot c)$ for all integers $n$ and $m$
 \end{itemize}
 
 \section{Modular Arithmetic}
