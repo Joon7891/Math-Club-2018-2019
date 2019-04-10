@@ -29,12 +29,22 @@
     \end{align*}
     
     \textbf{Example:} Simplify $i^{2018}$
-    \begin{align*}
-        i^{2018} &= i^{2016 + 2} \\
-                &= i^{4(54) + 2} \\
-                &= (1)(i^2) \\
-                &= -1
-    \end{align*}
+    \begin{columns}[T]
+        \column{.5\textwidth}
+        \begin{align*}
+            i^{2018} &= i^{2016 + 2} \\
+                    &= i^{4(54) + 2} \\
+                    &= (1)(i^2) \\
+                    &= -1
+        \end{align*}
+    
+        \column{.5\textwidth}
+        \begin{align*}
+            i^{2018} &= i^{(2018 \bmod 4)} \\
+                    &= i^{2} \\
+                    &= -1
+        \end{align*}
+    \end{columns}
 \end{frame}
 
 \subsection{Addition and Subtraction}
