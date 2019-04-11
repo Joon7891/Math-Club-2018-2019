@@ -14,3 +14,8 @@ Various documents used for Stephen Lewis Secondary School's Math Club for the 20
 - [Week 10: AM-GM Inequality](https://github.com/Joon7891/Math-Club-2018-2019/tree/master/Week%2010%20-%20AM-GM%20Inequality)
 - [Week 11: Number Theory (Part 1)](https://github.com/Joon7891/Math-Club-2018-2019/tree/master/Week%2011%20-%20Number%20Theory%20(Part%201))
 - [Week 12: Complex Numbers (Part 1)](https://github.com/Joon7891/Math-Club-2018-2019/tree/master/Week%2012%20-%20Complex%20Numbers%20(Part%201))
+
+**Executives**
+- [Joon Song](https://github.com/Joon7891)
+- [David Tsukernik](https://github.com/ApoapsisAlpha)
+- Mohammed Abdulrahman
