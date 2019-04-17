@@ -1,0 +1,168 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={7in, 10in}]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\title{Week 12 Problem Set Solutions\vspace{-3mm}}
+\author{2018-2019 SLSS Math Club\vspace{-5mm}}
+\date{April 16, 2019\vspace{-5mm}}
+
+\newcommand{\bspace}{\\ \\ \\ \\} 
+\newcommand{\ispace}{\\ \\ \\ \\ \\}
+\newcommand{\aspace}{\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\}
+
+\begin{document}
+\maketitle
+
+\section*{Basic Problems}
+\begin{enumerate}
+    \item \textbf{Rationalize $\displaystyle{\frac{5 - 4i}{2 + 3i}}$}
+    
+    The complex fraction can be rationalized as follows:
+    \begin{align*}
+        \frac{5 - 4i}{2 + 3i} &= (\frac{5 - 4i}{2 + 3i})(\frac{2 - 3i}{2 - 3i}) \\
+        &= \frac{10 - 8i - 15i + 12i^2}{4 - 9i^2} \\
+        &= \frac{10 - 23i - 12}{4 + 9} \\
+        &= \frac{-2 - 23i}{13}
+    \end{align*}
+    
+    \item \textbf{Determine the argument of $-3 + 4i$}
+    
+    Since $\Re{(-3 + 4i)} < 0$ and $\Im{(-3 + 4i)} > 0$, we know that $-3 + 4i$ is in the second quadrant of the complex plane. As such, we can determine the reference angle, $\theta_{r}$, and apply the property $\theta = \pi - \theta_{r}$ for angles in the second quadrant to determine the argument of $-3 + 4i$.
+    \begin{align*}
+        \tan{(\theta_{r})} &= \frac{4}{3} \\
+        \theta_{r} &= \tan^{-1}(\frac{4}{3}) \\ 
+        \theta_r &\simeq 0.9273 \\ \\
+        \theta &= \pi - \theta_r \\
+        \theta &= \pi - 0.9273 \\
+        \theta &\simeq 2.2143
+    \end{align*}
+    
+    Therefore, the argument of $-3 + 4i$ is approximately $2.2143$.
+    
+    \item \textbf{Determine the complex modulus of $4 - 2i$}
+    
+    The complex modulus of $4 - 2i$ can be calculated as follows:
+    \begin{align*}
+        |4 - 2i| &= \sqrt{(4)^2 + (-2)^2} \\
+                &= \sqrt{16 + 4} \\
+                &= \sqrt{20} \\
+                &= 2\sqrt{5}
+    \end{align*}
+\end{enumerate}
+
+\section*{Intermediate Problems}
+\begin{enumerate}
+    \item \textbf{Determine the sum of real values of $x$ and $y$ for which the following equation is satisfied: $$\frac{(1+i)x-2i}{3+i} + \frac{(2-3i)y+i}{3-i} = i$$}
+    
+    We can solve for $x$ and $y$ as follows:
+    \begin{align*}
+        i &= \frac{(1+i)x-2i}{3+i} + \frac{(2-3i)y+i}{3-i} \\
+        i &= \frac{(1+i)x-2i}{3+i}\cdot \frac{3 - i}{3 - i} + \frac{(2-3i)y+i}{3-i}\cdot \frac{3 + i}{3 + i} \\
+        i &= \frac{((1 + i)x - 2i)(3 - i) + ((2 - 3i)y + i)(3 + i)}{10} \\
+        10i &= (1 + i)3x - 6i - (1 + i)xi - 2 + (2 - 3i)3y + 3i + (2 - 3i)iy - 1 \\
+        10i &= 3x + 3xi - 6i - xi + x - 2 + 6y - 9yi + 3i + 2yi + 3y - 1 \\
+        0 &= 4x + 2xi - 13i - 3 + 9y - 7yi \\
+        0 &= (4x + 9y - 3) + (2x - 7y - 13)i \\ \\
+        \implies 0 &= 4x + 9y - 3 \\
+        \implies 0 &= 2x - 7y - 13
+    \end{align*}
+    
+    By solving the linear system above, we achieve the solution $x = 3$ and $y = -1$, which implies $x + y = 2$, as desired.
+    
+    \item \textbf{Express $\displaystyle{\frac{-3x}{1 - 5xi} + \frac{3i}{3 + i}}$ in the form $a + bi$ ($a, b \in \mathbb{R}$)}
+    
+    By rationalizing and summing common terms, we achieve the following:
+    \begin{align*}
+        \frac{-3x}{1 - 5xi} + \frac{3i}{3 + i} &=  \frac{-3x}{1 - 5xi} \cdot \frac{1 + 5xi}{1 + 5xi} + \frac{3i}{3 + i} \cdot \frac{3 - i}{3 - i} \\
+        &= \frac{-3x - 15x^2i}{1 + 25x^2} + \frac{9i + 3}{10} \\
+        &= -\frac{3x}{1 + 25x^2} - \frac{15x^2}{1 + 25x^2}i + \frac{9}{10}i + \frac{3}{10} \\
+        &= (-\frac{3x}{1 + 25x^2} + \frac{3}{10}) + (-\frac{15x^2}{1 + 25x^2} + \frac{9}{10})i \\
+        &= \frac{75x^2 - 30x + 3}{250x^2 + 10} + \frac{75x^2 + 9}{250x^2 + 10}i
+    \end{align*}
+    
+    Therefore, $\displaystyle{{\frac{-3x}{1 - 5xi} + \frac{3i}{3 + i}} = \frac{75x^2 - 30x + 3}{250x^2 + 10} + \frac{75x^2 + 9}{250x^2 + 10}i}$
+    
+    \newpage
+    
+    \item \textbf{Determine the following sum: $$\sum_{k = 1}^{200} i^k$$}
+    
+    Since $i^4 = 1$, we can state that $i^{4k + j} = i^j$ as shown below:
+    \begin{align*}
+        i^{4k + j} &= i^{4k} i^j \\
+                &= (i^4)^k i^j \\
+                &= (1)^k i^j \\
+                &= i^j
+    \end{align*}
+    
+    Using the above property, we can solve for the sum as follows:
+    \begin{align*}
+        \sum^{200}_{k = 1} i^k &= \sum_{k = 0}^{49} (i + i^2 + i^3 + i^4) \\
+        &= \sum_{k = 0}^{49} (i + 1 - i - 1) \\
+        &= (50)(0) \\
+        &= 0
+    \end{align*}
+    
+    Therefore, the sum is $0$.
+    
+    \item \textbf{If $p$ and $q$ are real numbers and $2 + \sqrt{3}i$ is a root of $x^2 + px+q=0$, what are the values of $p$ and $q$?}
+    
+    Since the coefficients of the quadratic equation are all real numbers, $2 - \sqrt{3}i$, the conjugate of $2 + \sqrt{3}i$, is also a root. Via Vieta's formulas, we achieve the following:
+    
+    \begin{align*}
+        -p &= (2 + \sqrt{3}i) + (2 - \sqrt{3}i) \\
+        -p &= 4 \\
+        p &= -4 \\ \\
+        q &= (2 + \sqrt{3}i)(2 - \sqrt{3}i) \\
+        &= 4 + 3 \\
+        &= 7
+    \end{align*}
+    
+    Therefore, $p = -4$ and $q = 7$.
+    
+\end{enumerate}
+
+\newpage
+
+\section*{Advanced Problems}
+\begin{enumerate}
+    \item \textbf{Prove that if $a + bi$ ($b \neq 0$) is a root of $x^2 + px + q = 0$ and $a, b, p, q \in \mathbb{R}$, then $a - bi$ is also a root of the quadratic equation.}
+    
+    Since $a + bi$ is a root of the quadratic equation, we know that:
+    \begin{align*}
+        0 &= (a + bi)^2 + p(a + bi) + q \\
+        0 &= a^2 + 2abi + -b^2 + pa + pbi + q \\
+        0 &= (a^2 - b^2 - pa + q) + (2ab + pb)i \\ \\
+        \Rightarrow 0 &= a^2 - b^2 - pa + q \\
+        \Rightarrow 0 &= 2ab + pb
+    \end{align*}
+    
+    Note that if and only if $a - bi$ is a root of the quadratic equation, $(a - bi)^2 + p(a - bi) + q = 0$.
+    \begin{align*}
+        (a - bi)^2 + p(a - bi) + q &= a^2 - 2abi - b^2 + pa - pbi + q \\
+        &= (a^2 - b^2 + pa + q) -(2ab + pb)i \\
+        &= (0) - (0)i \\
+        &= 0
+    \end{align*}
+    
+    As shown, if $a + bi$ is a root of the quadratic equation, $a - bi$ is also a root .
+    
+    \item \textbf{Can two complex numbers, $\sin{x} + i\cos{2x}$ and $\cos{x} - i\sin{2x}$, by conjugates of each other? If so, what is the possible value of $x$?}
+    
+    If $\sin x + i \cos 2x$ and $\cos x - i\sin 2x$, are conjugates then:
+    \begin{align*}
+        \overline{\sin x + i \cos 2x} &= \cos x - i\sin 2x \\
+        \sin x - i \cos 2x &= \cos x - i\sin 2x
+    \end{align*}
+    
+    Since $\Re{(\textit{LHS})} = \Re{(\textit{RHS})}$ and $\Im{(\textit{LHS})} = \Im{(\textit{RHS})}$, we can state that:
+    \begin{align*}
+        \sin x = \cos x &\text{ and } \sin 2x = \cos 2x \\
+        \tan x = 1 &\text{ and } \tan 2x = 1
+    \end{align*}
+    
+    Since no value of $x$ satisfies both equations, $\sin x + i \cos 2x$ and $\cos x - i\sin 2x$ cannot be complex conjgates of each other. 
+    
+\end{enumerate}
+\end{document}
