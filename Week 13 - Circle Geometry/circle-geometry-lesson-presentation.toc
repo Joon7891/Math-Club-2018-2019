@@ -1,0 +1,11 @@
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {2}{Terminology}{3}{0}{2}
+\beamer@sectionintoc {3}{Theories}{5}{0}{3}
+\beamer@subsectionintoc {3}{1}{Basic Formulas and Rules}{5}{0}{3}
+\beamer@subsectionintoc {3}{2}{The "Star Trek" Theorem}{6}{0}{3}
+\beamer@subsectionintoc {3}{3}{Inscribed Angles}{7}{0}{3}
+\beamer@subsectionintoc {3}{4}{Intersecting Chords}{8}{0}{3}
+\beamer@subsectionintoc {3}{5}{Alternate Segment Theorem}{9}{0}{3}
+\beamer@subsectionintoc {3}{6}{NoName Theorem (Perpendicular, Midpoint and Bisect Chords)}{10}{0}{3}
+\beamer@subsectionintoc {3}{7}{Right Angle Tangent}{11}{0}{3}
+\beamer@subsectionintoc {3}{8}{Equal Tangents}{12}{0}{3}
