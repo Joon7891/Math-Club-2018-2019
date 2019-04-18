@@ -22,70 +22,75 @@
 \section{Introduction}
 	\begin{frame}{Introduction}
 	\begin{itemize}
-	    \item The geometry of the circle represents an area of mathematics from which relatively
-	    difficult and interesting problems for the Euclid contest are frequently taken. \\
-	    \item You are expected to know some knowledge of the elementary properties of triangles, congruence and similarity, and properties of quadrilaterals.
-	\end{itemize}
-	\end{frame}
+	    \item Circle geometry is an area of mathematics which involves geometry applied on a circle.
+	    \item Many problems on the various mathematics contests, such as the Euclid, contain interesting and difficult circle geometry problems. 
+	    \item Some elementary geometry knowledge such as properties of triangles, congruence and similarity, and properties of quadrilaterals are required as a prerequisite to this
+topic.
+\end{itemize}
+\end{frame}
 	
 \section{Terminology}
-\small
-	\begin{frame}{Terminology}
-	\begin{itemize}
-		\item \textbf{Radius(OA) - } the segment between \textbf{Center(point O)} to each point on the circle. 
-		\item \textbf{Chord(AC) - } a segment whose endpoints are both on the circle. 
-		\item \textbf{Diameter(AB) - } a chord which passes through the center of a circle. It is also the longest chord in a circle. 
-	\end{itemize}
+\begin{frame}{Terminology}
+\begin{itemize}
+		\item Radius ($OA$): the segment between the center ($O$) to any point on the circle
+    	\item Chord ($AC$): a segment whose endpoints are both on the circle
+    	\item Diameter ($AB$): a chord which passes through the center of the circle. It is also the longest chord in a circle 
+\end{itemize}
 	\begin{figure}[h!]
 		\centering
-		\includegraphics[width=0.4\textwidth]{Graphics/Week_13/GeometryDiagram.png}
+		\includegraphics[width=0.3\textwidth]{Graphics/Week_13/GeometryDiagram.png}
 		\label{fig: 2.1}
 	\end{figure}
 \end{frame}
 
-	\begin{frame}{Terminology}
+\begin{frame}{Terminology}
 \begin{itemize}
-	\item \textbf{Tangent(Line h) - } a line which touches the circle in only one place. 
-	\item \textbf{Secant(Line i) - } a line which passes through the circle, intersecting it in two places.
-	\item \textbf{Arc(\arc{BD}) - } the part of the curve of a circle. Since \arc{BD} can refer to two different arcs, the long and the short way around the circle, often three points are used to designate the arc, as in \arc{BAD}. 
-	If only two points are used to designate an arc, it is assumed to mean the shorter one. \vspace{-5mm}
+	\item Tangent (Line $h$): a line which touches the circle at only one point
+	\item Secant (Line $i$): a line which passes through the circle, intersecting the circle at two points
+	\item Arc ($\arc{BD}$): a part of the curve of the circle
 \end{itemize}
+
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.35\textwidth]{Graphics/Week_13/GeometryDiagram.png}
+	\includegraphics[width=0.3\textwidth]{Graphics/Week_13/GeometryDiagram.png}
 	\label{fig: 2.1}
 \end{figure}
 \end{frame}
 
-\section{Theories}
-\normalsize
-\begin{frame}{Basic Formulas and Rules}
-\subsection{Basic Formulas and Rules}
+\section{Theorems}
+\begin{frame}{Basic Formulas and Concepts}
+\subsection{Basic Formulas and Concepts}
 \begin{itemize}
-	\item If $d$ is the diameter of the circle, and $r$ is the radius of the circle, $d=2r$.
-	\item The area of a circle, denoted by $A$, is $A=\pi r^2$.
-	\item The formula for the circumference of a circle is $\pi d=2\pi r$.
-	\item The formula for the arc length of a sector, denoted by "S", is calculated by $S=r\theta$, where $\theta$ is the angle between the sides of the arc, in radians. Meaning the arc length of a circle is ($\pi \cdot r$) which it is a circle's circumference.
-	\item The formula to convert between degrees to radian angles is denoted by $\theta\,^{\circ}\cdot \frac{\pi}{180^{\,\circ}}=\theta \, rad$.
+	\item If $d$ is the diameter of the circle, and $r$ is the  radius of the circle, $d = 2r$
+    \item The area of the circle, denoted $A$, is $A = \pi r^2$
+    \itme The circumference of a circle, denoted $C$, is $C = \pi d = 2\pi r$
+    \item The length of an arc, denoted $S$, is $S = r\theta$, where $\theta$ is the angle between the end points of the arc, in radians
 \end{itemize}
 \end{frame}
 
-\subsection{The "Star Trek" Theorem}
-\begin{frame}{The "Star Trek" Theorem}
-The central angle subtended by any arc is twice any of the inscribed angles on that arc.
-($\angle AOB = 2\angle ACB$)\\ \vspace{10mm}
+\subsection{Angle at the Center Theorem}
+\begin{frame}{Angle at the Center Theorem}
+The center angle subtended by any arc is twice any inscribed angle on that same arc. $\angle AOB = 2\angle ACB$
 
-\textbf{Thales' Theorem:} If a triangle is inscribed inside a circle, where one side of the triangle is the diameter of the circle, then the angle opposite to that side is a right angle.
 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[height=0.4\textheight]{Graphics/Week_13/StarTreck.png}
+\end{figure}
+\end{frame}
+
+\subsection{Thales' Theorem}
+\begin{frame}{Thales' Theorem}
+If a triangle is inscribed in a circle, where one side of the triangle is the diameter of the circle, then the angle opposite to that side is a right angle
+
+\begin{figure}[h!]
+	\centering
 	\includegraphics[height=0.4\textheight]{Graphics/Week_13/ThalesTheorem.png}
 \end{figure}
 \end{frame}
 
-	\subsection{Inscribed Angles}
-	\begin{frame}{Inscribed Angles}
+\subsection{Inscribed Angles}
+\begin{frame}{Inscribed Angles}
 The angles in the same segment from a common chord are equal.\\
 $\angle ACB = \angle ADB = \frac{1}{2}\angle AOB$
 
@@ -97,7 +102,8 @@ $\angle ACB = \angle ADB = \frac{1}{2}\angle AOB$
 
 \subsection{Intersecting Chords}
 \begin{frame}{Intersecting Chords}
-If two chords inside a circle intersect, the products of the intercepts of two intersecting chords are equal.\\ As shown in the figure below, $(PA)(PB) = (PC)(PD)$
+If two chords inside a circle intersect, the products of the intercepts of two intersecting chords are equal. $PA \cdot PB = PC \cdot PD$
+
 \begin{figure}[h!]
 	\centering
 	\includegraphics[height=0.5\textheight]{Graphics/Week_13/IntersectingChords.png}
@@ -106,47 +112,47 @@ If two chords inside a circle intersect, the products of the intercepts of two i
 
 \subsection{Alternate Segment Theorem}
 \begin{frame}{Alternate Segment Theorem}
-The angle between a tangent and a chord through the point of contact is equal to the angle in the alternate segment.\\
-$\angle DCE = \angle DEB$
+The angle between a tangent and a chord through the point of intersection is equal to the angle in the alternate segment. $\angle DCE = \angle DEB$
+
 \begin{figure}[h!]
 	\centering
 	\includegraphics[height=0.5\textheight]{Graphics/Week_13/AlternateSegment.png}
 \end{figure}
 \end{frame}
 
-\subsection{NoName Theorem (Perpendicular, Midpoint and Bisect Chords)}
-\begin{frame}{NoName Theorem (Perpendicular, Midpoint and Bisect Chords)}
-If one of the following statements is true, the other two statements are true as well:
-\footnotesize
-\begin{enumerate}
-	\item The perpendicular from the center of a circle to a chord bisects the chord.
-	\item The line from the centre of a circle to the midpoint of a chord is perpendicular to the chord.
-	\item The perpendicular bisector of a chord passes through the center of the circle.
-\end{enumerate}
-\begin{figure}[h!]
-	\centering
-	\includegraphics[height=0.4\textheight]{Graphics/Week_13/MidBisectChord.png}
-\end{figure}
-\normalsize
-\end{frame}
 
-\subsection{Right Angle Tangent}
-\begin{frame}{Right Angle Tangent}
-The tangent to a circle is perpendicular to the radius drawn to the point of contact.
-$\angle OBC = 90^{\,\circ}$
+\subsection{Tangent Angle Theorem}
+\begin{frame}{Tangent Angle Theorem}
+The tangent to a circle is perpendicular to the radius drawn to the point of intersection. $\angle OBC = 90^{\circ}$
+
 \begin{figure}[h!]
 	\centering
 	\includegraphics[height=0.5\textheight]{Graphics/Week_13/RightAngleTangent.png}
 \end{figure}
 \end{frame}
 
-\subsection{Equal Tangents}
-\begin{frame}{Equal Tangents}
-Tangents to a circle from an external point are equal.\\
-$AC=AB$
+\subsection{Equal Tangent Theorem}
+\begin{frame}{Equal Tangent Theorem}
+Tangents to a circle from an external point of are equal. $AC = AB$
+
 \begin{figure}[h!]
 	\centering
 	\includegraphics[height=0.5\textheight]{Graphics/Week_13/EqualTangents.png}
+\end{figure}
+\end{frame}
+
+\subsection{Other Theorems (Perpendicular, Midpoint and Bisect Chords)}
+\begin{frame}{Other Theorems (Perpendicular, Midpoint and Bisect Chords)}
+If one of the following statements are true, then the other two statements are also true:
+\begin{enumerate}
+    \item The perpendicular from the center of a circle to a chord bisects the chord
+    \item The line from the center of a circle of to the midpoint of a chord is perpendicular to the chord
+    \item The perpendicular bisector of a chord passes through the center of the circle
+\end{enumerate}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[height=0.3\textheight]{Graphics/Week_13/MidBisectChord.png}
 \end{figure}
 \end{frame}
 
