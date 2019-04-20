@@ -1,4 +1,4 @@
-# Math Club 2018 2019
+# Math Club 2018-2019
 Various documents used for Stephen Lewis Secondary School's Math Club for the 2018-2019 school year
 
 **Lesson Outline**
@@ -15,7 +15,6 @@ Various documents used for Stephen Lewis Secondary School's Math Club for the 20
 - [Week 11: Number Theory (Part 1)](https://github.com/Joon7891/Math-Club-2018-2019/tree/master/Week%2011%20-%20Number%20Theory%20(Part%201))
 - [Week 12: Complex Numbers (Part 1)](https://github.com/Joon7891/Math-Club-2018-2019/tree/master/Week%2012%20-%20Complex%20Numbers%20(Part%201))
 - [Week 13: Circle Geometry](https://github.com/Joon7891/Math-Club-2018-2019/tree/master/Week%2013%20-%20Circle%20Geometry)
-
 
 **Executives**
 - [Joon Song](https://github.com/Joon7891)
