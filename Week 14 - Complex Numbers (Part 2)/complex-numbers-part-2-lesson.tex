@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={7in, 10in}]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{amssymb}
+\usepackage{tabularx}
+\setlength{\parindent}{0pt}
+
+\title{Complex Numbers (Part 2) Lesson\vspace{-3mm}}
+\author{2018-2019 SLSS Math Club\vspace{-5mm}}
+\date{May 8, 2019\vspace{-5mm}}
+
+\begin{document}
+\maketitle
+
+\section{Euler's Formula}
+In complex analysis, Euler's provides a fundamental bridge between exponential and trigonometric functions. It can be used to evaluate complex exponents into a complex number.
+\begin{equation*}
+    e^{ix} = \text{cis } x = \cos{x} + i\sin{x}
+\end{equation*}
+
+\subsection{Geometric Interpretation}
+Euler's formula allows for any complex number to be represented in the form $e^{ix}$ which lies on the unit circle and has real and imaginary components $\cos{x}$ and $\sin{x}$, respectively.
+
+\begin{center}
+    \includegraphics[scale = 0.4]{"Week 14 - Complex Numbers (Part 2)/Graphics/Euler's Formula".png}
+\end{center}
+
+\subsection{Resolving Complex Numbers onto the Unit Circle}
+Using the following formulas, we can represent any complex number $z = a + ib$ as $z = r(\cos{x} + i\sin{x})$.
+\begin{align*}
+    r = \sqrt{a^2 + b^2} && \cos{\theta} = \frac{a}{r} && \sin{\theta} = \frac{b}{r}
+\end{align*}
+
+\subsection{Trigonometric Interpretation}
+Using $e^{ix} =  \cos{x} + i\sin{x}$ and $e^{-ix} =  \cos{x} - i\sin{x}$, we can extend the definition of trigonometric function into the complex domain.
+\begin{align*}
+    \cos{x} = \frac{e^{ix} +e^{-ix}}{2} && \sin{x} = \frac{e^{ix} - e^{-ix}}{2i} && \tan{x} = \frac{e^{ix} - e^{-ix}}{i(e^{ix} +e^{-ix})}
+\end{align*}
+
+\section{De Moivre's Theorem}
+De Moivre's theorem gives a formula for computing powers of complex numbers.
+\begin{equation*}
+    (r(\cos{\theta} + i\sin{\theta}))^n = r^n(\cos{(n\theta)} + i\sin{(n\theta)})
+\end{equation*}
+
+\section{Roots of Unity}
+A root of unity is a complex number that when raised to a positive integer power, equals $1$. \\ 
+
+The $n^{\text{th}}$ roots of unity are the complex solutions to the equation $z^n = 1$. If $n$ is even, the two real roots of unity will be $1$ and $-1$, whereas if $n$ is odd, the only real root of unity will be $1$. \\
+
+For $z^n = 1$, there will be $n$ complex solutions, including one or two real solutions, depending on the parity of $n$. Through Euler's formula and De Moivre's Theorem, we can derive the $n^{\text{th}}$ roots of unity. $$z_k = e^{2\pi ki / n} = \cos{(\frac{2\pi k}{n})} + i\sin{\frac{2 \pi k}{n}}$$ for $k = 0, 1, 2 \cdots, n$.
+
+\section{Rotations}
+Using Euler's formula and complex number multiplication, we can rotate points about the origin in an elegant manner. \\
+
+\textbf{Example:} The point $(2, 3)$ is rotated $\frac{3\pi}{4}$ radians counter clockwise about the origin. What is the resulting point? \\
+
+The point $(2, 3)$ can be represented as $z = 2 + 3i$ on the complex plane. The angle $\frac{3\pi}{4}$ radians can be represented as a point on the unit circle $(-\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2})$ or $z = -\frac{\sqrt{2}}{2} + \frac{\sqrt{2}}{2}i$. \\
+
+Noting that when complex numbers are multiplied, the modulus' are multiplied and arguments are added, multiplying $2 + 3i$ and $-\frac{\sqrt{2}}{2} + \frac{\sqrt{2}}{2}i$, will result in a complex number representative of $(2, 3)$ rotated $\frac{3\pi}{4}$ radians.
+
+\begin{equation*}
+    (2 + 3i)(-\frac{\sqrt{2}}{2} + i\frac{\sqrt{2}}{2}) = -\frac{5\sqrt{2}}{2} - i\frac{\sqrt{2}}{2}
+\end{equation*}
+
+As such, the point $(2, 3)$ rotated $\frac{3\pi}{4}$ radians counter clockwise about the origin.
+
+\begin{center}
+    \includegraphics[scale = 0.25]{"Week 14 - Complex Numbers (Part 2)/Graphics/rotation".png}
+\end{center}
+
+\end{document}

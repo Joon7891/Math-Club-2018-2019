@@ -1,0 +1,55 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usetheme{Antibes}
+\usecolortheme{beaver}
+\setbeamertemplate{navigation symbols}{}
+
+\title{Complex Numbers (Part 2) Lesson}
+\author{2018-2019 SLSS Math Club}
+\date{May 8, 2019}
+
+\begin{document}
+\frame{\titlepage}
+
+\section{Euler's Formula}
+\begin{frame}{Euler's Formula}
+\begin{itemize}
+    \item In complex analysis, Euler's provides a fundamental bridge between exponential and trigonometric functions. 
+    \item It can be used to evaluate complex exponents into a complex number.
+\end{itemize}
+
+\begin{equation*}
+    e^{ix} = \text{cis } x = \cos{x} + i\sin{x}
+\end{equation*}
+\end{frame}
+
+\begin{frame}{Geometric Interpretation}
+Euler's formula allows for any complex number to be represented in the form $e^{ix}$ which lies on the imaginary unit circle and has real and imaginary components $\cos{x}$ and $\sin{x}$, respectively.
+
+\begin{center}
+    \includegraphics[scale = 0.3]{"Week 14 - Complex Numbers (Part 2)/Graphics/Euler's Formula".png}
+\end{center}
+\end{frame}
+
+\begin{frame}{Resolving Complex Numbers onto the Unit Circle}
+Using the following formulas, we can represent any complex number $z = a + ib$ as $z = r(\cos{x} + i\sin{x})$.
+\begin{align*}
+    r = \sqrt{a^2 + b^2} && \cos{\theta} = \frac{a}{r} && \sin{\theta} = \frac{b}{r}
+\end{align*}
+\end{frame}
+
+\begin{frame}{Trigonometric Interpretation}
+Using $e^{ix} =  \cos{x} + i\sin{x}$ and $e^{-ix} =  \cos{x} - i\sin{x}$, we can extend the definition of trigonometric function into the complex domain.
+\begin{align*}
+    \cos{x} = \frac{e^{ix} +e^{-ix}}{2} && \sin{x} = \frac{e^{ix} - e^{-ix}}{2i} && \tan{x} = \frac{e^{ix} - e^{-ix}}{i(e^{ix} +e^{-ix})}
+\end{align*}
+\end{frame}
+
+\section{De Moivre's Theorem}
+\begin{frame}{De Moivre's Theorem}
+    De Moivre’s theorem gives a formula for computing powers of complex numbers.
+    \begin{equation*}
+        (r(\cos{\theta} + i\sin{\theta}))^n = r^n(\cos{(n\theta) + i\sin(n\theta)}
+    \end{equation*}
+\end{frame}
+\end{document}
