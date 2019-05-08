@@ -52,4 +52,48 @@ Using $e^{ix} =  \cos{x} + i\sin{x}$ and $e^{-ix} =  \cos{x} - i\sin{x}$, we can
         (r(\cos{\theta} + i\sin{\theta}))^n = r^n(\cos{(n\theta) + i\sin(n\theta)}
     \end{equation*}
 \end{frame}
+
+\section{Roots of Unity}
+\begin{frame}{Roots of Unity}
+\begin{itemize}
+    \item A root of unity is a complex number that when raised to a positive integer power, equals $1$. 
+    \item The $n^{\text{th}}$ roots of unity are the complex solutions to the equation $z^n = 1$. If $n$ is even, the two real roots of unity will be $1$ and $-1$, whereas if $n$ is odd, the only real root of unity will be $1$.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Roots of Unity}
+\begin{itemize}
+    \item For $z^n = 1$, there will be $n$ complex solutions, including one or two real solutions, depending on the parity of $n$. 
+    \item Through Euler's formula and De Moivre's Theorem, we can derive the $n^{\text{th}}$ roots of unity. $$z_k = e^{2\pi ki / n} = \cos{(\frac{2\pi k}{n})} + i\sin{\frac{2 \pi k}{n}}$$ for $k = 0, 1, 2 \cdots, n$.
+\end{itemize}
+\end{frame}
+
+\section{Rotations}
+\begin{frame}{Rotations}
+\begin{itemize}
+    \item Using Euler's formula and complex number multiplication, we can rotate points about the origin in an elegant manner.
+\end{itemize}
+
+\textbf{Example:} The point $(2, 3)$ is rotated $\frac{3\pi}{4}$ radians counter clockwise about the origin. What is the resulting point? 
+\begin{itemize}
+    \item The point $(2, 3)$ can be represented as $z = 2 + 3i$ on the complex plane.
+    \item The angle $\frac{3\pi}{4}$ radians can be represented as a point on the unit circle $(-\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2})$ or $z = -\frac{\sqrt{2}}{2} + \frac{\sqrt{2}}{2}i$. 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Rotations}
+    Noting that when complex numbers are multiplied, the modulus' are multiplied and arguments are added, multiplying $2 + 3i$ and $-\frac{\sqrt{2}}{2} + \frac{\sqrt{2}}{2}i$, will result in a complex number representative of $(2, 3)$ rotated $\frac{3\pi}{4}$ radians.
+    
+    \begin{equation*}
+        (2 + 3i)(-\frac{\sqrt{2}}{2} + i\frac{\sqrt{2}}{2}) = -\frac{5\sqrt{2}}{2} - i\frac{\sqrt{2}}{2}
+    \end{equation*}
+    
+    As such, the point $(2, 3)$ rotated $\frac{3\pi}{4}$ radians counter clockwise about the origin.
+\end{frame}
+
+\begin{frame}{Rotations}
+\begin{center}
+    \includegraphics[scale = 0.25]{"Week 14 - Complex Numbers (Part 2)/Graphics/rotation".png}
+\end{center}
+\end{frame}
 \end{document}
