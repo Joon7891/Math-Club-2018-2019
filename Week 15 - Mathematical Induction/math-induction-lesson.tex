@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={7in, 10in}]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{amssymb}
+\usepackage{tabularx}
+\setlength{\parindent}{0pt}
+
+\title{Mathematical Induction Lesson\vspace{-3mm}}
+\author{2018-2019 SLSS Math Club\vspace{-5mm}}
+\date{April 10, 2019\vspace{-5mm}}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+The principle of mathematical induction is often used for proving statements about the natural. This method can be divided into 3 steps:
+\begin{enumerate}
+   \item \textbf{Base Case:} Show that the desired result holds for a specific value (eg. $n = 1$).
+   \item \textbf{Inductive Hypothesis:} Assume that the result holds when $n = k$.
+   \item \textbf{Inductive Step:} Using the inductive hypothesis, show that the result holds when $n = k + 1$. In other words show that having the result hold for $n = k$ implies that the result holds for $n = k + 1$.
+\end{enumerate}
+
+\section{Reasoning}
+Essentially, the inductive step shows that if some the desired result holds for $n = k$, then the desired result will also hold for $n = k + 1$. This step alone is not enough to complete the proof. It is essential that the desired result also holds for a base case. This is because the inductive step only proves that \textbf{if} a statement is true for $n = k$, then it is also true for $n = k + 1$, but it does not show that the results ever holds for $n = k$.
+
+\section{Example}
+Let $P(n)$ be the statement $P(n): n! \ge 2^n$. Prove that $P(n)$ holds true for $n \ge 4$. \\
+
+\textbf{Base Case:} The base case $P(4)$ is correct because $24 \ge 16$. \\
+
+\textbf{Inductive Hypothesis:} If the statement is true for $n = k$, then $k! \ge 2^k$. \\
+
+\textbf{Inductive Step:} Suppose that the inductive hypothesis is true. Then,
+
+\begin{align*}
+    (k+1) \cdot k! &\ge (k+1) \cdot 2^k \\
+    (k+1)! &\ge (k+1) \cdot 2^k
+\end{align*}
+
+To show that $(k+1)! \ge 2^{k+1}$, we can look at when the right side, $(k+1) \cdot 2^k$, is $\ge 2^{k+1}$. This is only true when $(k+1) \ge 2$ since $2^{k+1} = 2 \cdot 2^k$. Formally, $(k+1) \cdot 2^k \ge 2^{k+1}$ when $k+1 \ge 2$ or $n \ge 1$. Thus $k! \ge 2^k$ implies $(k+1)! \ge 2^{k+1}$, as long as $k \ge 1$. Since $k \ge 4$, the proof is complete and $P(n)$ does hold true for $n \ge 4$.
+
+\end{document}
