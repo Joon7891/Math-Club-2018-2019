@@ -17,6 +17,7 @@ Various documents used for Stephen Lewis Secondary School's Math Club for the 20
 - [Week 13: Circle Geometry](https://github.com/Joon7891/Math-Club-2018-2019/tree/master/Week%2013%20-%20Circle%20Geometry)
 - [Week 14: Complex Numbers (Part 2)](https://github.com/Joon7891/Math-Club-2018-2019/tree/master/Week%2014%20-%20Complex%20Numbers%20(Part%202))
 - [Week 15: Mathematical Induction](https://github.com/Joon7891/Math-Club-2018-2019/tree/master/Week%2015%20-%20Mathematical%20Induction)
+- [Week 16: Complex Numbers (Part 2)](https://github.com/Joon7891/Math-Club-2018-2019/tree/master/Week%2016%20-%20Number%20Theory%20(Part%202))
 
 **Executives**
 - [Joon Song](https://github.com/Joon7891)

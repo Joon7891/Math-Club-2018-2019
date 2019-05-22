@@ -22,7 +22,7 @@ The Euclidean Algorithm is an efficient method of calculating the greatest commo
     \item Let $x = a, y = b$.
     \item Given $x, y$, use division algorithm to write $x = yq + r, 0 \leq r < |y|$.
     \item If $r = 0$, then $y = \gcd{(a, b)}$.
-    \item If $r \neq = 0$, replace $(x, y)$ by $(y, r)$. Go to Step 2.
+    \item If $r \neq 0$, replace $(x, y)$ by $(y, r)$. Go to Step 2.
 \end{enumerate}
 
 \textbf{Example:} Determine $\gcd{(16457, 1638)}$.
@@ -37,7 +37,7 @@ The Euclidean Algorithm is an efficient method of calculating the greatest commo
 Therefore, $7 = \gcd{(7, 14)} = \gcd{(14, 21)} = \gcd{(21, 77)} = \gcd{(77, 1638)} = \gcd{(1638, 16457)}$
 
 \section{Linear Diophantine Equations}
-A Diophantine equation is a polynomial equation whose solutions are restricted to integers. A linear Diophantine equation is a first-degree equation of this type. They are generally in the form $$ax + by = c, a, b, c, x, y$$ where $a, b, c, x, y \in \mathbb{Z}$.
+A Diophantine equation is a polynomial equation whose solutions are restricted to integers. A linear Diophantine equation is a first-degree equation of this type. They are generally in the form $$ax + by = c$$ where $a, b, c, x, y \in \mathbb{Z}$.
 
 \subsection{Bezout's Identity}
 Let $a$ and $b$ be non-negative integers and let $d = \gcd{(a, b)}$. Then there exists integers $x, y$ that satisfy $$ax + by = d$$ Furthermore, there exists integers $x, y$ that satisfy $$ax + by = n$$ if and only if $d \tdiv n$.
@@ -79,5 +79,5 @@ This gives us the solution $(x_0, y_0) = (7, -29)$, giving us the following solu
 \end{align*}
 
 \subsection{General Solutions to Linear Diophantine Equations}
-If $(x^{*}, y^{*})$ is a solution to the Diophantine equation $ax + by = n$, all solutions are in the form $$(x^{*} \pm m \frac{b}{\gcd{(a, b)}}, y^{*} \mp \frac{a}{\gcd{a, b}})$$
+If $(x^{*}, y^{*})$ is a solution to the Diophantine equation $ax + by = n$, all solutions are in the form $$(x^{*} \pm m \frac{b}{\gcd{(a, b)}}, y^{*} \mp m\frac{a}{\gcd{(a, b)}})$$
 \end{document}
