@@ -1,0 +1,83 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={7in, 10in}]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{tabularx}
+\setlength{\parindent}{0pt}
+\newcommand{\ndiv}{\hspace{-4pt}\not|\hspace{2pt}}
+\newcommand{\tdiv}{\; | \;}
+
+\title{Number Theory (Part 2) Lesson\vspace{-3mm}}
+\author{2018-2019 SLSS Math Club\vspace{-5mm}}
+\date{May 22, 2019\vspace{-5mm}}
+
+\begin{document}
+\maketitle
+
+\section{Euclidean Algorithm}
+The Euclidean Algorithm is an efficient method of calculating the greatest common divisor of two integers, without explicitly factoring the integers. Given integers $a, b$, we can calculate $d = \gcd{(a, b)}$ as follows:
+\begin{enumerate}
+    \item Let $x = a, y = b$.
+    \item Given $x, y$, use division algorithm to write $x = yq + r, 0 \leq r < |y|$.
+    \item If $r = 0$, then $y = \gcd{(a, b)}$.
+    \item If $r \neq = 0$, replace $(x, y)$ by $(y, r)$. Go to Step 2.
+\end{enumerate}
+
+\textbf{Example:} Determine $\gcd{(16457, 1638)}$.
+\begin{align*}
+    16457 &= 1638 \cdot 10 + 77 \\
+    1638 &= 77 \cdot 21 + 21 \\
+    77 &= 21 \cdot 3 + 14 \\
+    21 &= 14 \cdot 1 + 7 \\
+    14 &= 7 \cdot 2 + 0
+\end{align*}
+
+Therefore, $7 = \gcd{(7, 14)} = \gcd{(14, 21)} = \gcd{(21, 77)} = \gcd{(77, 1638)} = \gcd{(1638, 16457)}$
+
+\section{Linear Diophantine Equations}
+A Diophantine equation is a polynomial equation whose solutions are restricted to integers. A linear Diophantine equation is a first-degree equation of this type. They are generally in the form $$ax + by = c, a, b, c, x, y$$ where $a, b, c, x, y \in \mathbb{Z}$.
+
+\subsection{Bezout's Identity}
+Let $a$ and $b$ be non-negative integers and let $d = \gcd{(a, b)}$. Then there exists integers $x, y$ that satisfy $$ax + by = d$$ Furthermore, there exists integers $x, y$ that satisfy $$ax + by = n$$ if and only if $d \tdiv n$.
+
+\subsection{Solving Linear Diophantine Equations}
+An initial solution to the linear Diophantine equation $$ax + by = n$$ can be solved as follows:
+\begin{enumerate}
+    \item Use the Euclidean algorithm to determine $d = \gcd{(a, b)}$.
+    \item Determine if $d \tdiv n$. If not, there are no solutions.
+    \item Reformat the equations using Euclidean algorithm.
+    \item Using substitution, go through the steps of Euclidean algorithm to find a solution to the equation $ax_0 + by_0 = d$.
+    \item The initial solution to the equation $ax + by = n$ is the ordered pair $(x_0 \cdot \frac{n}{d}, y_0 \cdot \frac{n}{d})$.
+\end{enumerate}
+
+\textbf{Example:} Determine an initial integer solution to $141x + 34y = 30$.
+\begin{align*}
+    141 &= 34 \cdot 4 + 5 \\
+    34 &= 5 \cdot 6 + 4 \\
+    5 &= 4 \cdot 1 + 1 \\
+    4 &= 1 \cdot 4 + 0
+\end{align*}
+
+Therefore, $\gcd{(141, 34)} = 1$. As $1\tdiv 30$, an integer solution exists. By reformatting the equations above, we can determine a solution to the equation $141x_0 + 34y_0 = 1$.
+\begin{align*}
+    5 &= 141 - 34 \cdot 4 \\
+    4 &= 34 - 5 \cdot 6 \\
+    1 &= 5 - 4 \cdot 1 \\
+    1 &= 5 - (34 - 5 \cdot 6) \cdot 1 \\
+    1 &= 7 \cdot 5 - 1 \cdot 34 \\
+    1 &= 7 \cdot (141 - 34 \cdot 4) - 1 \cdot 34 \\
+    1 &= 7 \cdot 141 - 29 \cdot 34
+\end{align*}
+
+This gives us the solution $(x_0, y_0) = (7, -29)$, giving us the following solution:
+\begin{align*}
+    (x, y) &= (x_0 \cdot \frac{n}{d}, y_0 \cdot \frac{n}{d}) \\
+    &= (7 \cdot \frac{30}{1}, -29 \cdot \frac{30}{1}) \\
+    &= (210, -870)
+\end{align*}
+
+\subsection{General Solutions to Linear Diophantine Equations}
+If $(x^{*}, y^{*})$ is a solution to the Diophantine equation $ax + by = n$, all solutions are in the form $$(x^{*} \pm m \frac{b}{\gcd{(a, b)}}, y^{*} \mp \frac{a}{\gcd{a, b}})$$
+\end{document}
