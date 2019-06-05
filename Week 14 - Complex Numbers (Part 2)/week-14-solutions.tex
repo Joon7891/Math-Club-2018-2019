@@ -1,0 +1,97 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={7in, 10in}]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\title{Week 14 Problem Set Solutions\vspace{-3mm}}
+\author{2018-2019 SLSS Math Club\vspace{-5mm}}
+\date{May 41, 2019\vspace{-5mm}}
+
+\begin{document}
+\maketitle
+
+\section*{Basic Problems}
+\begin{enumerate}
+    \item \textbf{Evaluate $e^{i\pi}$.}
+    
+    By Euler's Formula, we achieve the following:
+    \begin{align*}
+        e^{i\pi} &= \cos{(\pi)} + i \sin{(\pi)} \\
+        &= 1 + i \cdot 0 \\
+        &= 1
+    \end{align*}
+
+    Therefore, $e^{i\pi} = 1$.
+    
+    \item \textbf{Evaluate $5^{4i + 7}$.}
+    
+    By rearranging and applying Euler's formula, we achieve the following:
+    \begin{align*}
+        5^{4i + 7} &= 5^{4i} \cdot 5^{7} \\
+        &= 78125 \cdot e^{4\ln{(5)} i} \\
+        &= 78125 \cdot [\cos{(4\ln{(5)})} + i\sin{(4\ln{(5)})}] \\
+        &= 78125 \cdot [0.988 + 0.154i] \\
+        &= 77187.5 + 12031.25i
+    \end{align*}
+    
+    Therefore, $5^{4i + 7} = 77187.5 + 12031.25i$.
+    
+    \item \textbf{Determine the sum of all $1729^{\text{th}}$ roots of unity.}
+    
+    We are looking for the sum of roots of
+    \begin{equation*}
+        x^{1769} - 1 = 0
+    \end{equation*}
+    
+    By Vieta's formulas, the sum of the roots is the opposite to the coefficient of the first degree term. The coefficient of the first degree term is $0$ so the sum of the roots is $0$.
+    
+\end{enumerate}
+
+\newpage
+
+\section*{Intermediate Problems}
+\begin{enumerate}
+    \item \textbf{Solve $\cos{x} = 2$ for $x \in \mathbb{C}$.}
+    
+    By cosine's complex definition, we can solve for $x$ as follows:
+    \begin{align*}
+        \cos{x} &= \frac{e^{ix} + e^{-ix}}{2} \\
+        2 &= \frac{e^{ix} + e^{-ix}}{2} \\
+        4 &= e^{ix} + e^{-ix} \\
+        4e^{ix} &= e^{2ix} + 1 \\
+        0 &= e^{2ix} - 4e^{ix} + 1 \\ \\
+        e^{ix} &= \frac{4 \pm \sqrt{(-4)^2 - 4(1)(1)}}{2(1)} \\
+        e^{ix} &= 2 \pm \sqrt{3} \\
+        ix &= \ln{(2 \pm \sqrt{3})} \\
+        x &= -\ln{(2 \pm \sqrt{3})}i \\
+        x &= \pm 1.317i
+    \end{align*}
+    
+    Therefore, $x = \pm 1.317i$.
+    
+    \item \textbf{Determine the resulting point when the point $(-1, 3)$ is rotated $\frac{\pi}{8}$ radians counter clockwise about the origin.}
+    
+    The corresponding on the complex plane is $z = -1 + 3i$. The angle $\frac{\pi}{8}$ can be represented as $0.9239 + 0.3826i$. The resulting point can be determined as follows:
+    \begin{equation*}
+        (-1 + 3i)(0.9239 + 0.3826i) = -2.0717 + 2.3891i
+    \end{equation*}
+    
+    Therefore, the resulting point is $(-2.0717, 2.3891)$.
+    
+    \item \textbf{If 1, $\delta_1$, $\delta_2$, $\delta_3$, are distinct fourth roots of unity, then evaluate the expression below.
+    \begin{equation*}
+        \frac{31 - 2\delta_1}{1 - 2\delta_1} + \frac{31 - 2\delta_2}{1 - 2\delta_2} +\frac{31 - 2\delta_3}{1 - 2\delta_3}
+    \end{equation*}}
+\end{enumerate}
+
+\section*{Advanced Problems}
+\begin{enumerate}
+    \item \textbf{Using De Moivre's theorem, solve for $x \in \mathbb{C}$
+    \begin{equation*}
+        0 = x^3 + \frac{1}{x^3} + x^2 + \frac{1}{x^2} + x + \frac{1}{x}
+    \end{equation*}}
+    
+    \item \textbf{Evaluate $$\sum_{n = 0}^{\infty} \frac{\cos{(n\theta)}}{2^n}$$ where $\cos{\theta} = \frac{1}{5}$.}
+\end{enumerate}
+\end{document}
